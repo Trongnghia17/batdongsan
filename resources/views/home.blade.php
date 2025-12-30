@@ -21,7 +21,280 @@
             display: none !important;
         }
     }
+                                
+    /* Popup Styles */
+    .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 9999;
+        animation: fadeIn 0.3s ease-in-out;
+        backdrop-filter: blur(2px);
+    }
+
+    .popup-overlay.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-content {
+        background: white;
+        border-radius: 10px;
+        max-width: 450px;
+        width: 90%;
+        position: relative;
+        animation: slideIn 0.4s ease-out;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .popup-header {
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        padding: 1.75rem 2rem;
+        text-align: center;
+        position: relative;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .popup-header h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .popup-header p {
+        margin: 0.5rem 0 0 0;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: transparent;
+        border: none;
+        color: #999;
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        line-height: 1;
+    }
+
+    .popup-close:hover {
+        color: #333;
+    }
+
+    .popup-body {
+        padding: 2rem;
+    }
+
+    .popup-form .form-group {
+        margin-bottom: 1.2rem;
+    }
+
+    .popup-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    .popup-form input,
+    .popup-form textarea {
+        width: 100%;
+        padding: 0.7rem 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        transition: all 0.2s;
+        background: #fafafa;
+    }
+
+    .popup-form input:focus,
+    .popup-form textarea:focus {
+        outline: none;
+        border-color: #1a237e;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.08);
+    }
+
+    .popup-form textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+
+    .popup-submit {
+        width: 100%;
+        background: #1a237e;
+        color: white;
+        border: none;
+        padding: 0.9rem;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .popup-submit:hover {
+        background: #0d1642;
+        box-shadow: 0 2px 8px rgba(26, 35, 126, 0.2);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(-30px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .popup-content {
+            width: 95%;
+        }
+        .popup-header {
+            padding: 1.5rem;
+        }
+        .popup-body {
+            padding: 1.5rem;
+        }
+    }
 </style>
+
+<!-- Popup Đăng Ký Tư Vấn -->
+<div class="popup-overlay" id="consultationPopup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <h3>Đăng Ký Nhận Tư Vấn</h3>
+            <p>Để lại thông tin, chúng tôi sẽ liên hệ với bạn</p>
+        </div>
+        <div class="popup-body">
+            <form class="popup-form" id="consultationForm" onsubmit="submitConsultation(event)">
+                <div class="form-group">
+                    <label for="popup_name">Họ và tên <span style="color: red;">*</span></label>
+                    <input type="text" id="popup_name" name="name" placeholder="Nhập họ và tên của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="popup_phone">Số điện thoại <span style="color: red;">*</span></label>
+                    <input type="tel" id="popup_phone" name="phone" placeholder="Nhập số điện thoại" required pattern="[0-9]{10,11}">
+                </div>
+                <div class="form-group">
+                    <label for="popup_email">Email</label>
+                    <input type="email" id="popup_email" name="email" placeholder="Nhập email của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="popup_subject">Tiêu đề</label>
+                    <input type="text" id="popup_subject" name="subject" placeholder="Tiêu đề tin nhắn">
+                </div>
+                <div class="form-group">
+                    <label for="popup_message">Nhu cầu tư vấn</label>
+                    <textarea id="popup_message" name="message" placeholder="Mô tả ngắn gọn nhu cầu của bạn..."></textarea>
+                </div>
+                <button type="submit" class="popup-submit">
+                    Gửi Thông Tin
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Hiển thị popup khi trang load
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Page loaded - checking popup');
+        
+        // Xóa session storage để test (xóa dòng này sau khi test xong)
+        sessionStorage.removeItem('consultationPopupShown');
+        
+        // Check if user has already seen the popup in this session
+        if (!sessionStorage.getItem('consultationPopupShown')) {
+            console.log('Showing popup in 1 second...');
+            setTimeout(function() {
+                const popup = document.getElementById('consultationPopup');
+                if (popup) {
+                    popup.classList.add('active');
+                    console.log('Popup displayed');
+                    sessionStorage.setItem('consultationPopupShown', 'true');
+                } else {
+                    console.error('Popup element not found!');
+                }
+            }, 1000); // Hiển thị sau 1 giây
+        } else {
+            console.log('Popup already shown in this session');
+        }
+    });
+
+    function closePopup() {
+        const popup = document.getElementById('consultationPopup');
+        if (popup) {
+            popup.classList.remove('active');
+        }
+    }
+
+    // Đóng popup khi click ra ngoài
+    window.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('consultationPopup');
+        if (popup) {
+            popup.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closePopup();
+                }
+            });
+        }
+    });
+
+    // Xử lý submit form
+    function submitConsultation(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+        
+        // TODO: Gửi data đến server
+        console.log('Form data:', data);
+        
+        // Hiển thị thông báo thành công
+        alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.');
+        
+        // Reset form và đóng popup
+        e.target.reset();
+        closePopup();
+    }
+
+    // Ngăn ESC key đóng popup
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closePopup();
+        }
+    });
+</script>
 <div class="hero">
     <div class="hero-slide">
         <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_7.jpg') }}')"></div>

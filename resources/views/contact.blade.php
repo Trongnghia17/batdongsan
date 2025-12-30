@@ -104,22 +104,30 @@
             <div class="col-12" data-aos="fade-up" data-aos-delay="500">
                 <div class="contact-form-wrapper">
                     <h3 class="mb-4 text-center">Gửi Tin Nhắn Cho Chúng Tôi</h3>
-                    <form action="#">
+                    <form action="#" id="contactForm" onsubmit="submitContact(event)">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Tên của bạn" />
+                                <label for="contact_name" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                                <input type="text" id="contact_name" name="name" class="form-control" placeholder="Nhập họ và tên của bạn" required />
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control" placeholder="Email của bạn" />
+                                <label for="contact_phone" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+                                <input type="tel" id="contact_phone" name="phone" class="form-control" placeholder="Nhập số điện thoại" required pattern="[0-9]{10,11}" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contact_email" class="form-label">Email</label>
+                                <input type="email" id="contact_email" name="email" class="form-control" placeholder="Nhập email của bạn" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contact_subject" class="form-label">Tiêu đề</label>
+                                <input type="text" id="contact_subject" name="subject" class="form-control" placeholder="Tiêu đề tin nhắn" />
                             </div>
                             <div class="col-12 mb-3">
-                                <input type="text" class="form-control" placeholder="Tiêu đề" />
-                            </div>
-                            <div class="col-12 mb-3">
-                                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Tin nhắn"></textarea>
+                                <label for="contact_message" class="form-label">Nhu cầu tư vấn</label>
+                                <textarea id="contact_message" name="message" cols="30" rows="7" class="form-control" placeholder="Mô tả ngắn gọn nhu cầu của bạn..."></textarea>
                             </div>
                             <div class="col-12 text-center">
-                                <input type="submit" value="Gửi tin nhắn" class="btn btn-primary px-5 py-3" />
+                                <button type="submit" class="btn btn-primary px-5 py-3">Gửi tin nhắn</button>
                             </div>
                         </div>
                     </form>
@@ -128,6 +136,24 @@
         </div>
     </div>
 </div>
+
+<script>
+    function submitContact(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+        
+        // TODO: Gửi data đến server
+        console.log('Contact form data:', data);
+        
+        // Hiển thị thông báo thành công
+        alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
+        
+        // Reset form
+        e.target.reset();
+    }
+</script>
 
 <style>
 .contact-info-card {
@@ -166,14 +192,24 @@
     color: #1a1a2e;
     font-weight: 700;
 }
+.contact-form-wrapper .form-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
 .contact-form-wrapper .form-control {
     padding: 0.8rem 1rem;
     border-radius: 8px;
     border: 1px solid #ddd;
+    background: #fafafa;
+    transition: all 0.2s;
 }
 .contact-form-wrapper .form-control:focus {
-    border-color: #c8102e;
-    box-shadow: 0 0 0 0.2rem rgba(200, 16, 46, 0.15);
+    border-color: #1a237e;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.08);
+    outline: none;
 }
 @media (max-width: 768px) {
     .contact-info-card {
