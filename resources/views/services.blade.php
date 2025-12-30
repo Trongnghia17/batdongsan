@@ -1,19 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'Services')
+@section('title', 'Dịch Vụ')
 
 @section('content')
 <div class="hero page-inner overlay" style="background-image: url('{{ asset('images/hero_bg_1.jpg') }}')">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-9 text-center mt-5">
-                <h1 class="heading" data-aos="fade-up">Services</h1>
+                <h1 class="heading" data-aos="fade-up">Dịch Vụ</h1>
 
                 <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
                     <ol class="breadcrumb text-center justify-content-center">
-                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Trang Chủ</a></li>
                         <li class="breadcrumb-item active text-white-50" aria-current="page">
-                            Services
+                            Dịch Vụ
                         </li>
                     </ol>
                 </nav>
@@ -27,14 +27,14 @@
         <div class="row">
             @php
                 $services = [
-                    ['icon' => 'flaticon-house', 'title' => 'Quality Properties', 'delay' => '300'],
-                    ['icon' => 'flaticon-house-2', 'title' => 'Top Rated Agent', 'delay' => '400'],
-                    ['icon' => 'flaticon-building', 'title' => 'Property for Sale', 'delay' => '500'],
-                    ['icon' => 'flaticon-house-3', 'title' => 'House for Sale', 'delay' => '600'],
-                    ['icon' => 'flaticon-house-4', 'title' => 'Quality Properties', 'delay' => '300'],
-                    ['icon' => 'flaticon-building', 'title' => 'Top Rated Agent', 'delay' => '400'],
-                    ['icon' => 'flaticon-house', 'title' => 'Property for Sale', 'delay' => '500'],
-                    ['icon' => 'flaticon-house-1', 'title' => 'House for Sale', 'delay' => '600'],
+                    ['icon' => 'flaticon-house', 'title' => 'BĐS Chất Lượng', 'delay' => '300'],
+                    ['icon' => 'flaticon-house-2', 'title' => 'Đại Lý Uy Tín', 'delay' => '400'],
+                    ['icon' => 'flaticon-building', 'title' => 'BĐS Cần Bán', 'delay' => '500'],
+                    ['icon' => 'flaticon-house-3', 'title' => 'Nhà Cần Bán', 'delay' => '600'],
+                    ['icon' => 'flaticon-house-4', 'title' => 'BĐS Chất Lượng', 'delay' => '300'],
+                    ['icon' => 'flaticon-building', 'title' => 'Đại Lý Uy Tín', 'delay' => '400'],
+                    ['icon' => 'flaticon-house', 'title' => 'BĐS Cần Bán', 'delay' => '500'],
+                    ['icon' => 'flaticon-house-1', 'title' => 'Nhà Cần Bán', 'delay' => '600'],
                 ];
             @endphp
 
@@ -49,7 +49,7 @@
                         Far far away, behind the word mountains, far from the countries
                         Vokalia and Consonantia, there live the blind texts.
                     </p>
-                    <p><a href="#" class="learn-more">Read more</a></p>
+                    <p><a href="#" class="learn-more">Đọc thêm</a></p>
                 </div>
             </div>
             @endforeach
@@ -62,13 +62,13 @@
         <div class="row mb-5 align-items-center">
             <div class="col-md-6">
                 <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-                    Customer Says
+                    Khách Hàng Nói Gì
                 </h2>
             </div>
             <div class="col-md-6 text-md-end">
                 <div id="testimonial-nav">
-                    <span class="prev" data-controls="prev">Prev</span>
-                    <span class="next" data-controls="next">Next</span>
+                    <span class="prev" data-controls="prev">Trước</span>
+                    <span class="next" data-controls="next">Sau</span>
                 </div>
             </div>
         </div>
@@ -80,10 +80,10 @@
             <div class="testimonial-slider">
                 @php
                     $testimonials = [
-                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Designer, Co-founder'],
+                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
                     ];
                 @endphp
 

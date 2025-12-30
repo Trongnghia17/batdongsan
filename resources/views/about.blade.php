@@ -1,19 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'About Us')
+@section('title', 'Giới Thiệu')
 
 @section('content')
 <div class="hero page-inner overlay" style="background-image: url('{{ asset('images/hero_bg_3.jpg') }}')">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-9 text-center mt-5">
-                <h1 class="heading" data-aos="fade-up">About</h1>
+                <h1 class="heading" data-aos="fade-up">Giới Thiệu</h1>
 
                 <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
                     <ol class="breadcrumb text-center justify-content-center">
-                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Trang Chủ</a></li>
                         <li class="breadcrumb-item active text-white-50" aria-current="page">
-                            About
+                            Giới Thiệu
                         </li>
                     </ol>
                 </nav>
@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row text-left mb-5">
             <div class="col-12">
-                <h2 class="font-weight-bold heading text-primary mb-4">About Us</h2>
+                <h2 class="font-weight-bold heading text-primary mb-4">Về Chúng Tôi</h2>
             </div>
             <div class="col-lg-6">
                 <p class="text-black-50">
@@ -79,7 +79,7 @@
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Quality properties</h3>
+                        <h3 class="heading">Bất động sản chất lượng</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -92,7 +92,7 @@
                         <span class="icon-person"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Top rated agents</h3>
+                        <h3 class="heading">Đại lý uy tín</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -105,7 +105,7 @@
                         <span class="icon-security"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Easy and safe</h3>
+                        <h3 class="heading">Dễ dàng và an toàn</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -131,7 +131,7 @@
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Quality properties</h3>
+                        <h3 class="heading">Bất động sản chất lượng</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -144,7 +144,7 @@
                         <span class="icon-person"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Top rated agents</h3>
+                        <h3 class="heading">Đại lý uy tín</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -157,7 +157,7 @@
                         <span class="icon-security"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Easy and safe</h3>
+                        <h3 class="heading">Dễ dàng và an toàn</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -186,25 +186,25 @@
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">2917</span></span>
-                    <span class="caption text-black-50"># of Buy Properties</span>
+                    <span class="caption text-black-50"># BĐS đã bán</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">3918</span></span>
-                    <span class="caption text-black-50"># of Sell Properties</span>
+                    <span class="caption text-black-50"># BĐS đang bán</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">38928</span></span>
-                    <span class="caption text-black-50"># of All Properties</span>
+                    <span class="caption text-black-50"># Tất cả BĐS</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">1291</span></span>
-                    <span class="caption text-black-50"># of Agents</span>
+                    <span class="caption text-black-50"># Đại lý</span>
                 </div>
             </div>
         </div>
@@ -216,13 +216,13 @@
         <div class="row mb-5 align-items-center">
             <div class="col-md-6">
                 <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-                    The Team
+                    Đội Ngũ
                 </h2>
             </div>
             <div class="col-md-6 text-md-end">
                 <div id="testimonial-nav">
-                    <span class="prev" data-controls="prev">Prev</span>
-                    <span class="next" data-controls="next">Next</span>
+                    <span class="prev" data-controls="prev">Trước</span>
+                    <span class="next" data-controls="next">Sau</span>
                 </div>
             </div>
         </div>
@@ -234,10 +234,10 @@
             <div class="testimonial-slider">
                 @php
                     $team = [
-                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Designer, Co-founder'],
+                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
                     ];
                 @endphp
 

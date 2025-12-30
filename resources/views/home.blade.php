@@ -1,10 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Property - Home')
+@section('title', 'Bất Động Sản - Trang Chủ')
 
 @section('content')
 <div class="hero">
     <div class="hero-slide">
+        <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_7.jpg') }}')"></div>
+        <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_6.jpg') }}')"></div>
+        <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_5.jpg') }}')"></div>
+        <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_4.jpg') }}')"></div>
         <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_3.jpg') }}')"></div>
         <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_2.jpg') }}')"></div>
         <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_1.jpg') }}')"></div>
@@ -14,11 +18,11 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-9 text-center">
                 <h1 class="heading" data-aos="fade-up">
-                    Easiest way to find your dream home
+                    Cách dễ nhất để tìm ngôi nhà mơ ước của bạn
                 </h1>
                 <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                    <input type="text" class="form-control px-4" placeholder="Your ZIP code or City. e.g. New York" />
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <input type="text" class="form-control px-4" placeholder="Mã ZIP hoặc Thành phố của bạn. VD: Hà Nội" />
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
                 </form>
             </div>
         </div>
@@ -29,13 +33,13 @@
     <div class="container">
         <div class="row mb-5 align-items-center">
             <div class="col-lg-6">
-                <h2 class="font-weight-bold text-primary heading">
-                    Popular Properties
+                 <h2 class="font-weight-bold text-primary heading">
+                    Bất Động Sản Phổ Biến
                 </h2>
             </div>
             <div class="col-lg-6 text-lg-end">
                 <p>
-                    <a href="{{ route('properties') }}" class="btn btn-primary text-white py-3 px-4">View all properties</a>
+                    <a href="{{ route('properties') }}" class="btn btn-primary text-white py-3 px-4">Xem tất cả BĐS</a>
                 </p>
             </div>
         </div>
@@ -58,15 +62,15 @@
                                     <div class="specs d-flex mb-4">
                                         <span class="d-block d-flex align-items-center me-3">
                                             <span class="icon-bed me-2"></span>
-                                            <span class="caption">2 beds</span>
+                                            <span class="caption">2 phòng ngủ</span>
                                         </span>
                                         <span class="d-block d-flex align-items-center">
                                             <span class="icon-bath me-2"></span>
-                                            <span class="caption">2 baths</span>
+                                            <span class="caption">2 phòng tắm</span>
                                         </span>
                                     </div>
 
-                                    <a href="{{ route('property.single') }}" class="btn btn-primary py-2 px-3">See details</a>
+                                    <a href="{{ route('property.single') }}" class="btn btn-primary py-2 px-3">Xem chi tiết</a>
                                 </div>
                             </div>
                         </div>
@@ -74,8 +78,8 @@
                     </div>
 
                     <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
-                        <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
-                        <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+                        <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Trước</span>
+                        <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Sau</span>
                     </div>
                 </div>
             </div>
@@ -89,45 +93,45 @@
             <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="box-feature">
                     <span class="flaticon-house"></span>
-                    <h3 class="mb-3">Our Properties</h3>
+                    <h3 class="mb-3">BĐS Của Chúng Tôi</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Voluptates, accusamus.
                     </p>
-                    <p><a href="#" class="learn-more">Learn More</a></p>
+                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
                 </div>
             </div>
             <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
                 <div class="box-feature">
                     <span class="flaticon-building"></span>
-                    <h3 class="mb-3">Property for Sale</h3>
+                    <h3 class="mb-3">BĐS Cần Bán</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Voluptates, accusamus.
                     </p>
-                    <p><a href="#" class="learn-more">Learn More</a></p>
+                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
                 </div>
             </div>
             <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="box-feature">
                     <span class="flaticon-house-3"></span>
-                    <h3 class="mb-3">Real Estate Agent</h3>
+                    <h3 class="mb-3">Đại Lý BĐS</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Voluptates, accusamus.
                     </p>
-                    <p><a href="#" class="learn-more">Learn More</a></p>
+                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
                 </div>
             </div>
             <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
                 <div class="box-feature">
                     <span class="flaticon-house-1"></span>
-                    <h3 class="mb-3">House for Sale</h3>
+                    <h3 class="mb-3">Nhà Cần Bán</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Voluptates, accusamus.
                     </p>
-                    <p><a href="#" class="learn-more">Learn More</a></p>
+                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
                 </div>
             </div>
         </div>
@@ -139,13 +143,13 @@
         <div class="row mb-5 align-items-center">
             <div class="col-md-6">
                 <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-                    Customer Says
+                    Khách Hàng Nói Gì
                 </h2>
             </div>
             <div class="col-md-6 text-md-end">
                 <div id="testimonial-nav">
-                    <span class="prev" data-controls="prev">Prev</span>
-                    <span class="next" data-controls="next">Next</span>
+                    <span class="prev" data-controls="prev">Trước</span>
+                    <span class="next" data-controls="next">Sau</span>
                 </div>
             </div>
         </div>
@@ -157,10 +161,10 @@
             <div class="testimonial-slider">
                 @php
                     $testimonials = [
-                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Designer, Co-founder'],
-                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Designer, Co-founder'],
+                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
                     ];
                 @endphp
 
@@ -196,7 +200,7 @@
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-5">
                 <h2 class="font-weight-bold heading text-primary mb-4">
-                    Let's find home that's perfect for you
+                    Hãy tìm ngôi nhà hoàn hảo cho bạn
                 </h2>
                 <p class="text-black-50">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -216,7 +220,7 @@
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">2M Properties</h3>
+                        <h3 class="heading">2 Triệu BĐS</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -229,7 +233,7 @@
                         <span class="icon-person"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Top Rated Agents</h3>
+                        <h3 class="heading">Đại Lý Uy Tín</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -242,7 +246,7 @@
                         <span class="icon-security"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Legit Properties</h3>
+                        <h3 class="heading">BĐS Hợp Pháp</h3>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nostrum iste.
@@ -255,25 +259,25 @@
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">3298</span></span>
-                    <span class="caption text-black-50"># of Buy Properties</span>
+                    <span class="caption text-black-50"># BĐS đã mua</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">2181</span></span>
-                    <span class="caption text-black-50"># of Sell Properties</span>
+                    <span class="caption text-black-50"># BĐS đang bán</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">9316</span></span>
-                    <span class="caption text-black-50"># of All Properties</span>
+                    <span class="caption text-black-50"># Tất cả BĐS</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
                 <div class="counter-wrap mb-5 mb-lg-0">
                     <span class="number"><span class="countup text-primary">7191</span></span>
-                    <span class="caption text-black-50"># of Agents</span>
+                    <span class="caption text-black-50"># Đại lý</span>
                 </div>
             </div>
         </div>
@@ -283,9 +287,9 @@
 <div class="section">
     <div class="row justify-content-center footer-cta" data-aos="fade-up">
         <div class="col-lg-7 mx-auto text-center">
-            <h2 class="mb-4">Be a part of our growing real state agents</h2>
+            <h2 class="mb-4">Trở thành một phần trong đội ngũ đại lý BĐS đang phát triển của chúng tôi</h2>
             <p>
-                <a href="#" class="btn btn-primary text-white py-3 px-4">Apply for Real Estate agent</a>
+                <a href="#" class="btn btn-primary text-white py-3 px-4">Đăng ký làm Đại lý BĐS</a>
             </p>
         </div>
     </div>
@@ -296,7 +300,7 @@
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-6 mb-5">
                 <h2 class="font-weight-bold heading text-primary mb-4">
-                    Our Agents
+                    Đại Lý Của Chúng Tôi
                 </h2>
                 <p class="text-black-50">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -321,7 +325,7 @@
 
                     <div class="person-contents">
                         <h2 class="mb-0"><a href="#">{{ $agent['name'] }}</a></h2>
-                        <span class="meta d-block mb-3">Real Estate Agent</span>
+                        <span class="meta d-block mb-3">Đại Lý Bất Động Sản</span>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Facere officiis inventore cumque tenetur laboriosam, minus
