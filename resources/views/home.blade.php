@@ -20,10 +20,85 @@
                 <h1 class="heading" data-aos="fade-up">
                     Cách dễ nhất để tìm ngôi nhà mơ ước của bạn
                 </h1>
-                <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                    <input type="text" class="form-control px-4" placeholder="Mã ZIP hoặc Thành phố của bạn. VD: Hà Nội" />
-                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                <form action="#" class="narrow-w form-search d-flex flex-nowrap align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <input type="text" class="form-control px-4" placeholder="Mã ZIP hoặc Thành phố của bạn. VD: Hà Nội" style="flex: 1;" />
+                    <button type="submit" class="btn btn-primary py-3 px-5" style="white-space: nowrap;">Tìm kiếm</button>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Giới thiệu chung Section -->
+<div class="section" style="background-color: #f8f9fa;">
+    <div class="container">
+        <!-- Header -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h2 class="font-weight-bold text-primary mb-3" style="font-size: 2rem; letter-spacing: 1px;">GIỚI THIỆU CHUNG</h2>
+                <div class="mx-auto" style="height: 3px; width: 60px; background-color: #1a237e;"></div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row">
+                    <!-- Left Column - Main Content -->
+                    <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+                        <div class="bg-white p-3 h-100" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <p style="font-size: 1rem; line-height: 1.9; color: #666; text-align: justify; margin-bottom: 1.2rem;">
+                                <strong style="color: #333;">Công ty Cổ phần Tập đoàn Đầu tư Ngân Tín</strong> <span style="color: #666;">(Tập đoàn Ngân Tín)</span> được thành lập năm <strong style="color: #1a237e;">2009</strong>, là một tập đoàn kinh doanh đa ngành nghề trong các lĩnh vực: <strong style="color: #333;">Bất động sản, Năng lượng xanh, Kho cảng biển</strong> và <strong style="color: #333;">Kinh doanh xăng dầu</strong>.
+                            </p>
+                            <p style="font-size: 1rem; line-height: 1.9; color: #666; text-align: justify; margin-bottom: 0;">
+                                Qua <strong style="color: #1a237e;">15 năm</strong> xây dựng và phát triển, Tập đoàn đã xây dựng được hệ sinh thái vững mạnh, phát triển cả về quy mô, cơ cấu tổ chức, năng lực tài chính, năng lực đầu tư, thành lập thêm nhiều đơn vị thành viên trong hệ sinh thái, thực hiện mục tiêu niêm yết trên sàn chứng khoán <strong style="color: #333;">London</strong> và <strong style="color: #333;">New York</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Quote & Values -->
+                    <div class="col-lg-5" data-aos="fade-left">
+                        <!-- Quote Box -->
+                        <div class="bg-white p-3 mb-3" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-left: 3px solid #1a237e;">
+                            <p class="fst-italic mb-2" style="font-size: 1rem; line-height: 1.6; color: #333;">
+                                "Ngân Tín của cộng đồng, Chúng tôi vì xã hội"
+                            </p>
+                            <p class="mb-0" style="font-size: 0.9rem; color: #1a237e;">
+                                <strong>— Chủ tịch HĐQT Trương Đình Hải</strong>
+                            </p>
+                        </div>
+
+                        <!-- Core Values -->
+                        <div class="bg-white p-3" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h6 class="text-uppercase mb-3" style="font-weight: 700; font-size: 0.95rem; color: #1a237e; letter-spacing: 0.5px;">GIÁ TRỊ CỐT LÕI</h6>
+                            <div class="row g-0">
+                                <div class="col-6 text-center" style="padding: 0.8rem 0; border-bottom: 2px solid #1a237e;">
+                                    <span class="icon-star d-block mb-1" style="font-size: 1.8rem; color: #1a237e;"></span>
+                                    <p class="mb-0" style="font-size: 0.85rem; font-weight: 600; color: #333;">Chuyên nghiệp</p>
+                                </div>
+                                <div class="col-6 text-center" style="padding: 0.8rem 0; border-bottom: 2px solid #1a237e;">
+                                    <span class="icon-check d-block mb-1" style="font-size: 1.8rem; color: #1a237e;"></span>
+                                    <p class="mb-0" style="font-size: 0.85rem; font-weight: 600; color: #333;">Uy tín</p>
+                                </div>
+                                <div class="col-6 text-center" style="padding: 0.8rem 0; border-bottom: 2px solid #1a237e;">
+                                    <span class="icon-lightbulb-o d-block mb-1" style="font-size: 1.8rem; color: #1a237e;"></span>
+                                    <p class="mb-0" style="font-size: 0.85rem; font-weight: 600; color: #333;">Sáng tạo</p>
+                                </div>
+                                <div class="col-6 text-center" style="padding: 0.8rem 0; border-bottom: 2px solid #1a237e;">
+                                    <span class="icon-shield d-block mb-1" style="font-size: 1.8rem; color: #1a237e;"></span>
+                                    <p class="mb-0" style="font-size: 0.85rem; font-weight: 600; color: #333;">Bền vững</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="text-center mt-4" data-aos="fade-up">
+                    <a href="{{ route('about') }}" class="btn text-white px-5 py-3" style="background-color: #ffc107; border: none; border-radius: 50px; font-weight: 600; font-size: 1rem; box-shadow: 0 4px 12px rgba(255,193,7,0.3);">
+                        Xem thêm <span class="ms-2">→</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

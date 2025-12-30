@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Giới Thiệu')
+@section('title', 'Giới Thiệu - Ngân Tín Group')
 
 @section('content')
 <div class="hero page-inner overlay" style="background-image: url('{{ asset('images/hero_bg_3.jpg') }}')">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-9 text-center mt-5">
-                <h1 class="heading" data-aos="fade-up">Giới Thiệu</h1>
+                <h1 class="heading" data-aos="fade-up">Về Ngân Tín Group</h1>
 
                 <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
                     <ol class="breadcrumb text-center justify-content-center">
@@ -26,40 +26,33 @@
     <div class="container">
         <div class="row text-left mb-5">
             <div class="col-12">
-                <h2 class="font-weight-bold heading text-primary mb-4">Về Chúng Tôi</h2>
+                <h2 class="font-weight-bold heading text-primary mb-4">Tập đoàn Ngân Tín uy tín trên thị trường</h2>
+                <p class="lead text-dark mb-4">Công ty Cổ Phần Tập đoàn đầu tư Ngân Tín</p>
             </div>
             <div class="col-lg-6">
                 <p class="text-black-50">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                    enim pariatur similique debitis vel nisi qui reprehenderit totam?
-                    Quod maiores.
+                    Mục tiêu phát triển thành tập đoàn quốc gia, trở thành <strong>Tập đoàn Tỷ đô</strong> đã và đang khẳng định dấu ấn và thương hiệu của mình trên thị trường trong nước và thế giới tại các lĩnh vực kinh doanh:
                 </p>
-                <p class="text-black-50">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                    saepe, explicabo nihil. Est, autem error cumque ipsum repellendus
-                    veniam sed blanditiis unde ullam maxime veritatis perferendis
-                    cupiditate, at non esse!
-                </p>
-                <p class="text-black-50">
-                    Enim, nisi labore exercitationem facere cupiditate nobis quod
-                    autem veritatis quis minima expedita. Cumque odio illo iusto
-                    reiciendis, labore impedit omnis, nihil aut atque, facilis
-                    necessitatibus asperiores porro qui nam.
-                </p>
+                <ul class="text-black-50">
+                    <li>Đầu tư dự án Bất động sản</li>
+                    <li>Năng lượng gồm Năng lượng xanh (Khí hóa lỏng, khí hydrogen, điện gió)</li>
+                    <li>Năng lượng khí đốt: (Gas, xăng, dầu DO)</li>
+                    <li>Kho cảng biển và logistic</li>
+                </ul>
             </div>
             <div class="col-lg-6">
                 <p class="text-black-50">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                    saepe, explicabo nihil. Est, autem error cumque ipsum repellendus
-                    veniam sed blanditiis unde ullam maxime veritatis perferendis
-                    cupiditate, at non esse!
+                    Trải qua hơn <strong>15 năm</strong> thành lập và phát triển, Tập đoàn đã không ngừng lớn mạnh về quy mô, cơ cấu tổ chức, không ngừng mở rộng thị phần, phát triển hệ sinh thái đa dạng.
                 </p>
                 <p class="text-black-50">
-                    Enim, nisi labore exercitationem facere cupiditate nobis quod
-                    autem veritatis quis minima expedita. Cumque odio illo iusto
-                    reiciendis, labore impedit omnis, nihil aut atque, facilis
-                    necessitatibus asperiores porro qui nam.
+                    Công ty CP Tập đoàn đầu tư Ngân Tín hoạt động trải dài từ <strong>Bắc đến Nam</strong> và các tỉnh miền Tây.
                 </p>
+                <div class="mt-4 p-4 bg-primary bg-opacity-10 rounded text-center">
+                    <h2 class="text-warning display-4 fw-bold mb-2">2009 - 2024</h2>
+                    <h1 class="text-primary display-1 fw-bold mb-0">15</h1>
+                    <p class="text-muted mb-0">NĂM</p>
+                    <h4 class="text-primary fw-bold">PHÁT TRIỂN BỀN VỮNG</h4>
+                </div>
             </div>
         </div>
     </div>
@@ -74,15 +67,28 @@
                 </div>
             </div>
             <div class="col-lg-4">
+                <h3 class="text-primary mb-4">Sứ Mệnh & Tầm Nhìn</h3>
+                
+                <div class="d-flex feature-h">
+                    <span class="wrap-icon me-3">
+                        <span class="icon-star"></span>
+                    </span>
+                    <div class="feature-text">
+                        <h3 class="heading">Triết Lý</h3>
+                        <p class="text-black-50">
+                            Chuyên nghiệp • Uy tín • Sáng tạo • Bền vững
+                        </p>
+                    </div>
+                </div>
+
                 <div class="d-flex feature-h">
                     <span class="wrap-icon me-3">
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Bất động sản chất lượng</h3>
+                        <h3 class="heading">Tầm Nhìn</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            Trở thành Doanh nghiệp tỷ đô, phát triển hệ sinh thái đồng bộ. Mở rộng thị phần trên khắp cả nước và các nước lân cận.
                         </p>
                     </div>
                 </div>
@@ -92,23 +98,9 @@
                         <span class="icon-person"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Đại lý uy tín</h3>
+                        <h3 class="heading">Sứ Mệnh</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="d-flex feature-h">
-                    <span class="wrap-icon me-3">
-                        <span class="icon-security"></span>
-                    </span>
-                    <div class="feature-text">
-                        <h3 class="heading">Dễ dàng và an toàn</h3>
-                        <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            Nâng cao giá trị cho Doanh nghiệp, Cổ đông, Nhà đầu tư và mang lại lợi ích cho người lao động, đóng góp cho xã hội.
                         </p>
                     </div>
                 </div>
@@ -119,48 +111,80 @@
 
 <div class="section pt-0">
     <div class="container">
-        <div class="row justify-content-between mb-5">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-                <div class="img-about dots">
-                    <img src="{{ asset('images/hero_bg_2.jpg') }}" alt="Image" class="img-fluid" />
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 text-center mb-4">
+                <h2 class="font-weight-bold heading text-primary">Giá Trị Cốt Lõi</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="d-flex feature-h">
+                    <span class="wrap-icon me-3">
+                        <span class="icon-star"></span>
+                    </span>
+                    <div class="feature-text">
+                        <h3 class="heading">Uy Tín</h3>
+                        <p class="text-black-50">
+                            Uy tín trên thị trường, tạo niềm tin đối với khách hàng và đối tác.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="d-flex feature-h">
+                    <span class="wrap-icon me-3">
+                        <span class="icon-heart"></span>
+                    </span>
+                    <div class="feature-text">
+                        <h3 class="heading">Khách hàng là trọng tâm</h3>
+                        <p class="text-black-50">
+                            Hướng mục tiêu vào những nhu cầu của khách hàng, cung cấp sản phẩm và dịch vụ chất lượng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="d-flex feature-h">
                     <span class="wrap-icon me-3">
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Bất động sản chất lượng</h3>
+                        <h3 class="heading">Sáng Tạo</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            Chú trọng sự đổi mới, sáng tạo, cải tiến chất lượng dịch vụ và sản phẩm, nâng cao hiệu quả kinh doanh.
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="d-flex feature-h">
-                    <span class="wrap-icon me-3">
-                        <span class="icon-person"></span>
-                    </span>
-                    <div class="feature-text">
-                        <h3 class="heading">Đại lý uy tín</h3>
-                        <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
-                        </p>
-                    </div>
-                </div>
-
+        <div class="row justify-content-center">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="d-flex feature-h">
                     <span class="wrap-icon me-3">
                         <span class="icon-security"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Dễ dàng và an toàn</h3>
+                        <h3 class="heading">Tuân thủ pháp luật</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            Am hiểu và tuân thủ pháp luật trong hoạt động kinh doanh, đảm bảo sự phát triển bền vững.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="d-flex feature-h">
+                    <span class="wrap-icon me-3">
+                        <span class="icon-person"></span>
+                    </span>
+                    <div class="feature-text">
+                        <h3 class="heading">Cộng Đồng</h3>
+                        <p class="text-black-50">
+                            Luôn đồng hành và có các hoạt động vì cộng đồng, tích cực đóng góp cho xã hội.
                         </p>
                     </div>
                 </div>
@@ -169,100 +193,133 @@
     </div>
 </div>
 
-<div class="section">
+<div class="section pt-0">
     <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="font-weight-bold heading text-primary mb-5">Lịch Sử Phát Triển</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
-                <img src="{{ asset('images/img_1.jpg') }}" alt="Image" class="img-fluid" />
+                <div class="p-4 bg-light rounded mb-4">
+                    <h4 class="text-primary">02/12/2009</h4>
+                    <p class="text-black-50">"Thành lập Công ty TNHH Ngân Tín"</p>
+                </div>
+                <div class="p-4 bg-light rounded">
+                    <h4 class="text-primary">16/03/2023</h4>
+                    <p class="text-black-50">"Tập đoàn Ngân Tín nâng vốn điều lệ thành 800 tỷ VNĐ"</p>
+                </div>
             </div>
             <div class="col-md-4 mt-lg-5" data-aos="fade-up" data-aos-delay="100">
-                <img src="{{ asset('images/img_3.jpg') }}" alt="Image" class="img-fluid" />
+                <div class="p-4 bg-light rounded mb-4">
+                    <h4 class="text-primary">26/09/2017</h4>
+                    <p class="text-black-50">"Được cấp chứng nhận Thương nhân phân phối xăng dầu do Bộ Công Thương cấp"</p>
+                </div>
+                <div class="p-4 bg-light rounded">
+                    <h4 class="text-primary">31/12/2023</h4>
+                    <p class="text-black-50">"Hoàn thành chỉ tiêu phát triển 40 hệ thống đại lý và cửa hàng bán lẻ xăng dầu"</p>
+                </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <img src="{{ asset('images/img_2.jpg') }}" alt="Image" class="img-fluid" />
+                <div class="p-4 bg-light rounded mb-4">
+                    <h4 class="text-primary">25/03/2024</h4>
+                    <p class="text-black-50">"Thành công nhận Quyết định chấp thuận chủ đầu tư cho dự án hơn 2.500 tỷ VNĐ"</p>
+                </div>
+                <div class="p-4 bg-light rounded">
+                    <h4 class="text-success">25/04/2024</h4>
+                    <p class="text-black-50">"Tập đoàn Ngân tín nâng vốn điều lệ thành 1.120 tỷ VNĐ"</p>
+                </div>
             </div>
         </div>
         <div class="row section-counter mt-5">
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">2917</span></span>
-                    <span class="caption text-black-50"># BĐS đã bán</span>
+                    <span class="number"><span class="countup text-primary">15</span></span>
+                    <span class="caption text-black-50"># Năm Kinh Nghiệm</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">3918</span></span>
-                    <span class="caption text-black-50"># BĐS đang bán</span>
+                    <span class="number"><span class="countup text-primary">1120</span></span>
+                    <span class="caption text-black-50"># Tỷ VNĐ Vốn Điều Lệ</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">38928</span></span>
-                    <span class="caption text-black-50"># Tất cả BĐS</span>
+                    <span class="number"><span class="countup text-primary">40</span>+</span>
+                    <span class="caption text-black-50"># Hệ Thống Đại Lý</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">1291</span></span>
-                    <span class="caption text-black-50"># Đại lý</span>
+                    <span class="number"><span class="countup text-primary">25</span>+</span>
+                    <span class="caption text-black-50"># Tỉnh Thành Hoạt Động</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="section sec-testimonials bg-light">
+<div class="section pt-0 sec-testimonials bg-light">
     <div class="container">
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6">
-                <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-                    Đội Ngũ
-                </h2>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <div id="testimonial-nav">
-                    <span class="prev" data-controls="prev">Trước</span>
-                    <span class="next" data-controls="next">Sau</span>
-                </div>
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="font-weight-bold heading text-primary mb-4">Địa Bàn Hoạt Động</h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-4"></div>
-        </div>
-        <div class="testimonial-slider-wrap">
-            <div class="testimonial-slider">
-                @php
-                    $team = [
-                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                    ];
-                @endphp
-
-                @foreach ($team as $member)
-                <div class="item">
-                    <div class="testimonial">
-                        <img src="{{ asset('images/' . $member['image']) }}" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
-                        <div class="rate">
-                            @for ($i = 0; $i < 5; $i++)
-                            <span class="icon-star text-warning"></span>
-                            @endfor
-                        </div>
-                        <h3 class="h5 text-primary mb-4">{{ $member['name'] }}</h3>
-                        <blockquote>
-                            <p>
-                                &ldquo;Far far away, behind the word mountains, far from the
-                                countries Vokalia and Consonantia, there live the blind
-                                texts. Separated they live in Bookmarksgrove right at the
-                                coast of the Semantics, a large language ocean.&rdquo;
-                            </p>
-                        </blockquote>
-                        <p class="text-black-50">{{ $member['role'] }}</p>
-                    </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h4 class="text-primary mb-3"><span class="icon-location-pin me-2"></span>MIỀN BẮC</h4>
+                    <ul class="list-unstyled text-black-50">
+                        <li>• Thành Tỉnh Nam Định</li>
+                        <li>• Thành phố Hà Nội</li>
+                        <li>• Tỉnh Hà Giang</li>
+                        <li>• Tỉnh Tuyên Quang</li>
+                        <li>• Tỉnh Thái Nguyên</li>
+                        <li>• Thành phố Hải Phòng</li>
+                        <li>• Tỉnh Quảng Ninh</li>
+                        <li>• Tỉnh Thanh Hóa</li>
+                        <li>• Tỉnh Nghệ An</li>
+                    </ul>
                 </div>
-                @endforeach
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h4 class="text-primary mb-3"><span class="icon-location-pin me-2"></span>MIỀN TRUNG</h4>
+                    <ul class="list-unstyled text-black-50">
+                        <li>• Tỉnh Bình Thuận</li>
+                        <li>• Tỉnh Tây Ninh</li>
+                        <li>• Khu vực Nam Tây Nguyên</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h4 class="text-primary mb-3"><span class="icon-location-pin me-2"></span>MIỀN NAM</h4>
+                    <ul class="list-unstyled text-black-50">
+                        <li>• Thành phố Hồ Chí Minh</li>
+                        <li>• Tỉnh Đồng Nai</li>
+                        <li>• Tỉnh Bình Dương</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h4 class="text-primary mb-3"><span class="icon-location-pin me-2"></span>MIỀN TÂY NAM BỘ</h4>
+                    <ul class="list-unstyled text-black-50">
+                        <li>• Tỉnh Tiền Giang</li>
+                        <li>• Thành phố Cần Thơ</li>
+                        <li>• Tỉnh Trà Vinh</li>
+                        <li>• Tỉnh Vĩnh Long</li>
+                        <li>• Các tỉnh Đồng Bằng Sông Cửu Long</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
