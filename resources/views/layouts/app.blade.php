@@ -4,11 +4,36 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Untree.co" />
+    <meta name="author" content="Ngân Tín Group" />
     <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
+    <meta name="description" content="Tập đoàn Ngân Tín - Công ty Cổ phần Tập đoàn Đầu tư Ngân Tín, chuyên về Bất động sản, Năng lượng xanh, Kho cảng biển và Kinh doanh xăng dầu" />
+    <meta name="keywords" content="ngân tín, ngan tin group, bất động sản, năng lượng xanh, xăng dầu, logistic, đầu tư bất động sản" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="@yield('title', 'Tập đoàn Ngân Tín - Bất Động Sản')" />
+    <meta property="og:description" content="Tập đoàn Ngân Tín - Công ty Cổ phần Tập đoàn Đầu tư Ngân Tín, chuyên về Bất động sản, Năng lượng xanh, Kho cảng biển và Kinh doanh xăng dầu. Liên hệ: 024.234.68899" />
+    <meta property="og:image" content="{{ asset('images/logo.png') }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="NGAN TIN GROUP" />
+    <meta property="og:locale" content="vi_VN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="{{ url()->current() }}" />
+    <meta name="twitter:title" content="@yield('title', 'Tập đoàn Ngân Tín - Bất Động Sản')" />
+    <meta name="twitter:description" content="Tập đoàn Ngân Tín - Công ty Cổ phần Tập đoàn Đầu tư Ngân Tín" />
+    <meta name="twitter:image" content="{{ asset('images/logo.png') }}" />
+
+    <!-- Additional Meta Tags -->
+    <meta property="business:contact_data:street_address" content="Số 28K, Khu phố 3, phường Phú Tân" />
+    <meta property="business:contact_data:locality" content="Vĩnh Long" />
+    <meta property="business:contact_data:country_name" content="Vietnam" />
+    <meta property="business:contact_data:phone_number" content="024.234.68899" />
+    <meta property="business:contact_data:website" content="https://ngantinland.com/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
