@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +12,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
 
     <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}" />
@@ -21,8 +23,9 @@
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 
-    <title>@yield('title', 'Bất Động Sản - Website Miễn Phí Bootstrap 5 bởi Untree.co')</title>
+    <title>@yield('title', 'Dự án')</title>
 </head>
+
 <body>
     <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
@@ -37,34 +40,41 @@
         <div class="container">
             <div class="menu-bg-wrap">
                 <div class="site-navigation">
-                    <a href="{{ route('home') }}" class="logo m-0 float-start"><img src="{{ asset('images/logo.png') }}" alt="Logo" style="max-height: 80px;" /></a>
+                    <a href="{{ route('home') }}" class="logo m-0 float-start"><img src="{{ asset('images/logo.png') }}"
+                            alt="Logo" style="max-height: 80px;" /></a>
 
                     <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
                         <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
                             <a href="{{ route('home') }}">Trang Chủ</a>
                         </li>
-                        <li class="has-children {{ request()->routeIs('properties*') ? 'active' : '' }}">
-                            <a href="{{ route('properties') }}">Lĩnh vực hoạt động</a>
+                        <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
+                            <a href="{{ route('about') }}">Giới Thiệu</a>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Lĩnh vực hoạt động</a>
                             <ul class="dropdown">
                                 <li><a href="#">Bất Động Sản</a></li>
                                 <li><a href="#">Xăng dầu</a></li>
-                                 <li><a href="#">Năng lượng xanh</a></li>
-                                  <li><a href="#">Logistic</a></li>
-                           
+                                <li><a href="#">Năng lượng xanh</a></li>
+                                <li><a href="#">Logistic</a></li>
+
                             </ul>
+                        </li>
+                        <li class="{{ request()->routeIs('properties') ? 'active' : '' }}">
+                            <a href="{{ route('properties') }}">Dự Án</a>
                         </li>
                         <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
                             <a href="{{ route('services') }}">Dịch Vụ</a>
                         </li>
-                        <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
-                            <a href="{{ route('about') }}">Giới Thiệu</a>
-                        </li>
+
                         <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
                             <a href="{{ route('contact') }}">Liên Hệ</a>
                         </li>
                     </ul>
 
-                    <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+                    <a href="#"
+                        class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                        data-toggle="collapse" data-target="#main-navbar">
                         <span></span>
                     </a>
                 </div>
@@ -87,7 +97,8 @@
                             </li>
                             <li class="mb-3">
                                 <strong>CN HCM:</strong><br>
-                                <address class="mb-0">Tòa nhà Diamond Plaza, số 34 Lê Duẩn, phường Sài Gòn, TP HCM</address>
+                                <address class="mb-0">Tòa nhà Diamond Plaza, số 34 Lê Duẩn, phường Sài Gòn, TP HCM
+                                </address>
                             </li>
                             <li class="mb-3">
                                 <strong>CN Hà Nội:</strong><br>
@@ -140,7 +151,9 @@
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <p>
-                        Bản quyền &copy;<script>document.write(new Date().getFullYear());</script>. Tập đoàn Ngân Tín. Tất cả quyền được bảo lưu.
+                        Bản quyền &copy;
+                        <script>document.write(new Date().getFullYear());</script>. Tập đoàn Ngân Tín. Tất cả quyền được
+                        bảo lưu.
                     </p>
                 </div>
             </div>
@@ -162,4 +175,5 @@
     <script src="{{ asset('js/counter.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
 </body>
+
 </html>

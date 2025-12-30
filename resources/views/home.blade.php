@@ -218,7 +218,7 @@
             </div>
             <div class="col-lg-6 text-lg-end">
                 <p>
-                    <a href="{{ route('properties') }}" class="btn btn-primary text-white py-3 px-4">Xem tất cả BĐS</a>
+                    <a href="{{ route('properties') }}" class="btn btn-primary text-white py-3 px-4">Xem tất cả</a>
                 </p>
             </div>
         </div>
