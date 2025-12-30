@@ -83,52 +83,59 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="widget">
-                        <h3>Liên Hệ</h3>
-                        <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-                        <ul class="list-unstyled links">
-                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                            <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+                        <h3>Trụ Sở</h3>
+                        <ul class="list-unstyled links mb-4">
+                            <li class="mb-3">
+                                <strong>Trụ sở chính:</strong><br>
+                                <address class="mb-0">Số 28K, Khu phố 3, phường Phú Tân, tỉnh Vĩnh Long</address>
+                            </li>
+                            <li class="mb-3">
+                                <strong>CN HCM:</strong><br>
+                                <address class="mb-0">Tòa nhà Diamond Plaza, số 34 Lê Duẩn, phường Sài Gòn, TP HCM</address>
+                            </li>
+                            <li class="mb-3">
+                                <strong>CN Hà Nội:</strong><br>
+                                <address class="mb-0">443 đường Lĩnh Nam, Phường Vĩnh Hưng, TP Hà Nội</address>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="widget">
-                        <h3>Nguồn</h3>
-                        <ul class="list-unstyled float-start links">
-                            <li><a href="#">Giới thiệu</a></li>
-                            <li><a href="#">Dịch vụ</a></li>
-                            <li><a href="#">Tầm nhìn</a></li>
-                            <li><a href="#">Sứ mệnh</a></li>
-                            <li><a href="#">Điều khoản</a></li>
-                            <li><a href="#">Chính sách bảo mật</a></li>
-                        </ul>
-                        <ul class="list-unstyled float-start links">
-                            <li><a href="#">Đối tác</a></li>
-                            <li><a href="#">Kinh doanh</a></li>
-                            <li><a href="#">Tuyển dụng</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Câu hỏi thường gặp</a></li>
-                            <li><a href="#">Sáng tạo</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="widget">
-                        <h3>Liên Kết</h3>
-                        <ul class="list-unstyled links">
-                            <li><a href="#">Tầm nhìn của chúng tôi</a></li>
-                            <li><a href="#">Giới thiệu về chúng tôi</a></li>
-                            <li><a href="#">Liên hệ chúng tôi</a></li>
+                        <h3>Cơ Hội Nghề Nghiệp</h3>
+                        <ul class="list-unstyled links mb-4">
+                            <li><strong>Điện thoại CN TPHCM:</strong></li>
+                            <li><a href="tel://0906313388">0906 313 388</a></li>
+                            <li class="mt-2"><strong>Email:</strong></li>
+                            <li><a href="mailto:Hoisochinh@ngantingroup.com">Hoisochinh@ngantingroup.com</a></li>
                         </ul>
 
+                        <h3 class="mt-4">Dịch Vụ Khách Hàng</h3>
+                        <ul class="list-unstyled links">
+                            <li><strong>Điện thoại:</strong></li>
+                            <li><a href="tel://02423468899">024.234.68899</a></li>
+                            <li class="mt-2"><strong>Email:</strong></li>
+                            <li><a href="mailto:Hoisochinh@ngantingroup.com">Hoisochinh@ngantingroup.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Liên Hệ CN Hà Nội</h3>
+                        <ul class="list-unstyled links mb-4">
+                            <li><strong>Điện thoại:</strong></li>
+                            <li><a href="tel://02462968899">024.6296.8899</a></li>
+                            <li class="mt-2"><strong>Email:</strong></li>
+                            <li><a href="mailto:Hoisochinh@ngantingroup.com">Hoisochinh@ngantingroup.com</a></li>
+                        </ul>
+
+                        <h3 class="mt-4">Mạng Xã Hội</h3>
                         <ul class="list-unstyled social">
+                            <li><a href="#"><span class="icon-facebook"></span></a></li>
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
                             <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#"><span class="icon-facebook"></span></a></li>
                             <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                            <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                            <li><a href="#"><span class="icon-youtube"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -137,12 +144,8 @@
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <p>
-                        Bản quyền &copy;<script>document.write(new Date().getFullYear());</script>. Tất cả quyền được bảo lưu. &mdash; Thiết kế với tình yêu bởi
-                        <a href="https://untree.co">Untree.co</a>
+                        Bản quyền &copy;<script>document.write(new Date().getFullYear());</script>. Tập đoàn Ngân Tín. Tất cả quyền được bảo lưu.
                     </p>
-                    <div>
-                        Phân phối bởi <a href="https://themewagon.com/" target="_blank">themewagon</a>
-                    </div>
                 </div>
             </div>
         </div>

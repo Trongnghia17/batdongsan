@@ -104,6 +104,92 @@
     </div>
 </div>
 
+<!-- Các Điểm Nổi Bật Section -->
+<section class="features-1">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="font-weight-bold heading text-primary mb-4">
+                    CÁC ĐIỂM NỔI BẬT
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Doanh thu hàng nghìn tỷ -->
+            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="box-feature h-100 d-flex flex-column">
+                    <span class="flaticon-house"></span>
+                    <h3 class="mb-3">Doanh thu hàng nghìn tỷ</h3>
+                    <p class="flex-grow-1">
+                        Với sứ mệnh phát triển bền vững, an sinh xã hội và mục tiêu vươn tầm thế giới thành tập đoàn tỷ đô, thời gian qua, Ban Lãnh đạo cùng tập thể CBNV Tập đoàn đã không ngừng nỗ lực hoàn thành tốt các mục tiêu, kế hoạch đề ra, từng bước đặt tên trên bản đồ Doanh nghiệp có tiếng tăm, khẳng định mình trong các lĩnh vực Xăng dầu, Bất động sản, Năng lượng xanh và Kho cảng biển. Doanh thu năm 2023 chỉ tính riêng mảng xăng dầu của Tập đoàn là 9.000 tỷ VNĐ.
+                    </p>
+                    <p class="mt-auto"><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+                </div>
+            </div>
+
+            <!-- Dự án BĐS trọng điểm -->
+            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="box-feature h-100 d-flex flex-column">
+                    <span class="flaticon-building"></span>
+                    <h3 class="mb-3">Dự án BĐS trọng điểm</h3>
+                    <p class="flex-grow-1">
+                        Tập đoàn Ngân Tín đã và đang nỗ lực, bứt phá trong lĩnh vực bất động sản, với một loạt các dự án lớn, tại nhiều tỉnh, thành phố như: Bình Phước, Đồng Nai, Long An, Tiền Giang, Bến Tre, Quy Nhơn, Nam Định…
+                    </p>
+                    <p class="mt-auto"><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+                </div>
+            </div>
+
+            <!-- Hệ thống đại lý khắp cả nước -->
+            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="box-feature h-100 d-flex flex-column">
+                    <span class="flaticon-house-3"></span>
+                    <h3 class="mb-3">Hệ thống đại lý khắp cả nước</h3>
+                    <p class="flex-grow-1">
+                        Với hơn 15 năm kinh nghiệm trong lĩnh vực xăng dầu, Tập đoàn Ngân Tín ngày càng khẳng định uy tín của mình, bằng việc vươn rộng địa bàn trải dài từ Bắc đến Nam, với hệ thống kho xăng dầu lớn và rộng khắp, gần 70 đại lí và nhiều cửa hàng bán lẻ xăng dầu trên khắp các tỉnh, thành trên cả nước.
+                    </p>
+                    <p class="mt-auto"><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+                </div>
+            </div>
+
+            <!-- Top 10 Thương hiệu xuất sắc châu Á -->
+            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="box-feature h-100 d-flex flex-column">
+                    <span class="flaticon-house-1"></span>
+                    <h3 class="mb-3">Top 10 Thương hiệu xuất sắc châu Á</h3>
+                    <p class="flex-grow-1">
+                        Giải thưởng "Top 10 – Thương hiệu xuất sắc Châu Á – Asia Excellent Brands 2024" là lời khẳng định cho thấy sự phát triển vững chắc và niềm tin của khách hàng và đối tác với sự phát triển và lớn mạnh không ngừng của Tập đoàn Ngân Tín. Với định hướng đúng đắn, sự linh hoạt trong điều chỉnh chiến lược kinh doanh để thích ứng trong mọi hoàn cảnh, Ban Lãnh đạo và cán bộ, nhân viên Tập đoàn luôn luôn đồng lòng, đoàn kết khẳng định tên tuổi của mình tại cộng đồng doanh nghiệp trong nước và quốc tế.
+                    </p>
+                    <p class="mt-auto"><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+                </div>
+            </div>
+
+            <!-- Môi trường làm việc tốt nhất Châu Á -->
+            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <div class="box-feature h-100 d-flex flex-column">
+                    <span class="flaticon-building"></span>
+                    <h3 class="mb-3">Môi trường làm việc tốt nhất Châu Á</h3>
+                    <p class="flex-grow-1">
+                        Được trọng dụng, cơ hội thăng tiến nghề nghiệp, không gian làm việc chuyên nghiệp, cùng với chính sách lương, thưởng hấp dẫn… là một trong những yếu tố giúp Công ty CP Tập đoàn Đầu tư Ngân Tín được vinh danh đơn vị có Môi trường làm việc tốt nhất Châu Á.
+                    </p>
+                    <p class="mt-auto"><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+                </div>
+            </div>
+
+            <!-- Top 10 doanh nghiệp tiêu biểu ASEAN 2024 -->
+            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="800">
+                <div class="box-feature h-100 d-flex flex-column">
+                    <span class="flaticon-house-2"></span>
+                    <h3 class="mb-3">Top 10 doanh nghiệp tiêu biểu ASEAN 2024</h3>
+                    <p class="flex-grow-1">
+                        Việc được vinh danh trong Top 10 doanh nghiệp tiêu biểu ASEAN 2024 là sự công nhận xứng đáng cho những nỗ lực của Ban lãnh đạo cùng đội ngũ cán bộ, nhân viên có trình độ, trách nhiệm và tận tâm của Tập đoàn Ngân Tín, góp phần khẳng định tên tuổi và vị trí của Tập đoàn Ngân Tín trong cộng đồng doanh nghiệp.
+                    </p>
+                    <p class="mt-auto"><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="section">
     <div class="container">
         <div class="row mb-5 align-items-center">
@@ -162,56 +248,65 @@
     </div>
 </div>
 
-<section class="features-1">
+<!-- LĨNH VỰC HOẠT ĐỘNG Section -->
+<div class="section" style="background-color: #f8f9fa;">
     <div class="container">
+        <!-- Header -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h2 class="font-weight-bold text-primary mb-3" style="font-size: 2rem; letter-spacing: 1px;">LĨNH VỰC HOẠT ĐỘNG</h2>
+                <div class="mx-auto" style="height: 3px; width: 60px; background-color: #1a237e;"></div>
+            </div>
+        </div>
+
+        <!-- Content -->
         <div class="row">
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="box-feature">
-                    <span class="flaticon-house"></span>
-                    <h3 class="mb-3">BĐS Của Chúng Tôi</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Voluptates, accusamus.
-                    </p>
-                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+            <!-- Bất động sản -->
+            <div class="col-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="box-feature h-100 text-center" style="background: white; border-radius: 8px; padding: 2rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <div class="mb-3">
+                        <img src="{{ asset('images/linh_vuc1_new.png') }}" alt="Bất động sản" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <h3 class="mb-3" style="font-size: 1.2rem; font-weight: 600; color: #1a237e;">Bất động sản</h3>
+                    <p><a href="#" class="learn-more" style="color: #ffc107; font-weight: 600; text-decoration: none;">Tìm Hiểu Thêm →</a></p>
                 </div>
             </div>
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-                <div class="box-feature">
-                    <span class="flaticon-building"></span>
-                    <h3 class="mb-3">BĐS Cần Bán</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Voluptates, accusamus.
-                    </p>
-                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+
+            <!-- Xăng dầu -->
+            <div class="col-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="box-feature h-100 text-center" style="background: white; border-radius: 8px; padding: 2rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <div class="mb-3">
+                        <img src="{{ asset('images/linhvuc_2.png') }}" alt="Xăng dầu" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <h3 class="mb-3" style="font-size: 1.2rem; font-weight: 600; color: #1a237e;">Xăng dầu</h3>
+                    <p><a href="#" class="learn-more" style="color: #ffc107; font-weight: 600; text-decoration: none;">Tìm Hiểu Thêm →</a></p>
                 </div>
             </div>
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                <div class="box-feature">
-                    <span class="flaticon-house-3"></span>
-                    <h3 class="mb-3">Đại Lý BĐS</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Voluptates, accusamus.
-                    </p>
-                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+
+            <!-- Năng lượng xanh -->
+            <div class="col-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="box-feature h-100 text-center" style="background: white; border-radius: 8px; padding: 2rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <div class="mb-3">
+                        <img src="{{ asset('images/linh_vuc3_new.png') }}" alt="Năng lượng xanh" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <h3 class="mb-3" style="font-size: 1.2rem; font-weight: 600; color: #1a237e;">Năng lượng xanh</h3>
+                    <p><a href="#" class="learn-more" style="color: #ffc107; font-weight: 600; text-decoration: none;">Tìm Hiểu Thêm →</a></p>
                 </div>
             </div>
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-                <div class="box-feature">
-                    <span class="flaticon-house-1"></span>
-                    <h3 class="mb-3">Nhà Cần Bán</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Voluptates, accusamus.
-                    </p>
-                    <p><a href="#" class="learn-more">Tìm Hiểu Thêm</a></p>
+
+            <!-- Logistic -->
+            <div class="col-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="box-feature h-100 text-center" style="background: white; border-radius: 8px; padding: 2rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <div class="mb-3">
+                        <img src="{{ asset('images/linhvuc_4.png') }}" alt="Logistic" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <h3 class="mb-3" style="font-size: 1.2rem; font-weight: 600; color: #1a237e;">Logistic</h3>
+                    <p><a href="#" class="learn-more" style="color: #ffc107; font-weight: 600; text-decoration: none;">Tìm Hiểu Thêm →</a></p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <div class="section sec-testimonials">
     <div class="container">
@@ -236,10 +331,30 @@
             <div class="testimonial-slider">
                 @php
                     $testimonials = [
-                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        [
+                            'name' => 'Nguyễn Văn An', 
+                            'image' => 'person_1-min.jpg', 
+                            'role' => 'Doanh nhân, TP. Hồ Chí Minh',
+                            'content' => 'Tôi rất hài lòng với dịch vụ tư vấn bất động sản của Tập đoàn Ngân Tín. Đội ngũ nhân viên chuyên nghiệp, nhiệt tình và luôn đặt lợi ích khách hàng lên hàng đầu. Cảm ơn các bạn đã giúp tôi tìm được căn nhà mơ ước.'
+                        ],
+                        [
+                            'name' => 'Trần Thị Mai', 
+                            'image' => 'person_2-min.jpg', 
+                            'role' => 'Giám đốc Marketing, Hà Nội',
+                            'content' => 'Quy trình làm việc chuyên nghiệp, minh bạch và nhanh chóng. Tôi đã đầu tư vào nhiều dự án của Ngân Tín và đều rất hài lòng với chất lượng cũng như tiến độ bàn giao. Đây thực sự là đối tác đáng tin cậy.'
+                        ],
+                        [
+                            'name' => 'Lê Hoàng Nam', 
+                            'image' => 'person_3-min.jpg', 
+                            'role' => 'Kỹ sư, Đà Nẵng',
+                            'content' => 'Tôi đã mua căn hộ cho gia đình tại dự án của Tập đoàn Ngân Tín. Chất lượng xây dựng tuyệt vời, thiết kế hiện đại và giá cả hợp lý. Đội ngũ chăm sóc khách hàng rất tận tâm, luôn sẵn sàng hỗ trợ mọi lúc.'
+                        ],
+                        [
+                            'name' => 'Phạm Minh Tuấn', 
+                            'image' => 'person_4-min.jpg', 
+                            'role' => 'Chủ doanh nghiệp, Bình Dương',
+                            'content' => 'Là khách hàng lâu năm của Ngân Tín, tôi đánh giá cao uy tín và tầm nhìn phát triển bền vững của Tập đoàn. Các dự án luôn được quy hoạch bài bản, có vị trí đắc địa và tiềm năng tăng giá cao trong tương lai.'
+                        ],
                     ];
                 @endphp
 
@@ -255,10 +370,7 @@
                         <h3 class="h5 text-primary mb-4">{{ $testimonial['name'] }}</h3>
                         <blockquote>
                             <p>
-                                &ldquo;Far far away, behind the word mountains, far from the
-                                countries Vokalia and Consonantia, there live the blind
-                                texts. Separated they live in Bookmarksgrove right at the
-                                coast of the Semantics, a large language ocean.&rdquo;
+                                &ldquo;{{ $testimonial['content'] }}&rdquo;
                             </p>
                         </blockquote>
                         <p class="text-black-50">{{ $testimonial['role'] }}</p>
@@ -270,16 +382,28 @@
     </div>
 </div>
 
+
+
+<div class="section">
+    <div class="row justify-content-center footer-cta" data-aos="fade-up">
+        <div class="col-lg-7 mx-auto text-center">
+            <h2 class="mb-4">Trở thành một phần trong đội ngũ đại lý BĐS đang phát triển của chúng tôi</h2>
+            <p>
+                <a href="#" class="btn btn-primary text-white py-3 px-4">Đăng ký làm Đại lý BĐS</a>
+            </p>
+        </div>
+    </div>
+</div>
 <div class="section section-4 bg-light">
     <div class="container">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-5">
                 <h2 class="font-weight-bold heading text-primary mb-4">
-                    Hãy tìm ngôi nhà hoàn hảo cho bạn
+                    Tìm kiếm bất động sản phù hợp với bạn
                 </h2>
                 <p class="text-black-50">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                    enim pariatur similique debitis vel nisi qui reprehenderit.
+                    Tập đoàn Ngân Tín cam kết mang đến cho khách hàng những sản phẩm bất động sản chất lượng cao, 
+                    vị trí đắc địa, pháp lý minh bạch và giá trị đầu tư bền vững.
                 </p>
             </div>
         </div>
@@ -295,10 +419,10 @@
                         <span class="icon-home2"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">2 Triệu BĐS</h3>
+                        <h3 class="heading">Dự án đa dạng</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            Hệ thống các dự án bất động sản đa dạng về loại hình và phân khúc, 
+                            đáp ứng mọi nhu cầu đầu tư và an cư của khách hàng.
                         </p>
                     </div>
                 </div>
@@ -308,10 +432,10 @@
                         <span class="icon-person"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">Đại Lý Uy Tín</h3>
+                        <h3 class="heading">Đội ngũ chuyên nghiệp</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            Đội ngũ tư vấn giàu kinh nghiệm, tận tâm và chuyên nghiệp, 
+                            luôn đồng hành cùng khách hàng trong suốt quá trình mua bán bất động sản.
                         </p>
                     </div>
                 </div>
@@ -321,10 +445,10 @@
                         <span class="icon-security"></span>
                     </span>
                     <div class="feature-text">
-                        <h3 class="heading">BĐS Hợp Pháp</h3>
+                        <h3 class="heading">Pháp lý minh bạch</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            Tất cả các dự án đều đảm bảo pháp lý rõ ràng, thủ tục hợp pháp, 
+                            mang đến sự an tâm tuyệt đối cho nhà đầu tư.
                         </p>
                     </div>
                 </div>
@@ -333,44 +457,32 @@
         <div class="row section-counter mt-5">
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">3298</span></span>
-                    <span class="caption text-black-50"># BĐS đã mua</span>
+                    <span class="number"><span class="countup text-primary">15</span>+</span>
+                    <span class="caption text-black-50">Năm kinh nghiệm</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">2181</span></span>
-                    <span class="caption text-black-50"># BĐS đang bán</span>
+                    <span class="number"><span class="countup text-primary">50</span>+</span>
+                    <span class="caption text-black-50">Dự án triển khai</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">9316</span></span>
-                    <span class="caption text-black-50"># Tất cả BĐS</span>
+                    <span class="number"><span class="countup text-primary">10000</span>+</span>
+                    <span class="caption text-black-50">Khách hàng hài lòng</span>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
                 <div class="counter-wrap mb-5 mb-lg-0">
-                    <span class="number"><span class="countup text-primary">7191</span></span>
-                    <span class="caption text-black-50"># Đại lý</span>
+                    <span class="number"><span class="countup text-primary">70</span>+</span>
+                    <span class="caption text-black-50">Đại lý toàn quốc</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="section">
-    <div class="row justify-content-center footer-cta" data-aos="fade-up">
-        <div class="col-lg-7 mx-auto text-center">
-            <h2 class="mb-4">Trở thành một phần trong đội ngũ đại lý BĐS đang phát triển của chúng tôi</h2>
-            <p>
-                <a href="#" class="btn btn-primary text-white py-3 px-4">Đăng ký làm Đại lý BĐS</a>
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="section section-5 bg-light">
+<!-- <div class="section section-5 bg-light">
     <div class="container">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-6 mb-5">
@@ -427,5 +539,5 @@
             @endforeach
         </div>
     </div>
-</div>
+</div> -->
 @endsection
