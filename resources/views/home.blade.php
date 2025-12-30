@@ -3,6 +3,24 @@
 @section('title', 'Bất Động Sản - Trang Chủ')
 
 @section('content')
+<style>
+    .property-slider-wrap {
+        position: relative;
+    }
+    #property-nav .prev:hover,
+    #property-nav .next:hover {
+        background: #0d1642 !important;
+        transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+        #property-nav .prev {
+            left: 10px !important;
+        }
+        #property-nav .next {
+            right: 10px !important;
+        }
+    }
+</style>
 <div class="hero">
     <div class="hero-slide">
         <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_7.jpg') }}')"></div>
@@ -206,42 +224,79 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="property-slider-wrap">
+                <div class="property-slider-wrap" style="position: relative;">
                     <div class="property-slider">
-                        @for ($i = 1; $i <= 8; $i++)
+                        @forelse ($featuredProperties as $property)
                         <div class="property-item">
-                            <a href="{{ route('property.single') }}" class="img">
-                                <img src="{{ asset('images/img_' . $i . '.jpg') }}" alt="Image" class="img-fluid" />
+                            <a href="{{ route('property.single', $property->id) }}" class="img" style="display: block; overflow: hidden; height: 300px;">
+                                @if($property->image)
+                                    @if(Str::startsWith($property->image, 'properties/'))
+                                        <img src="{{ asset('storage/' . $property->image) }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                    @else
+                                        <img src="{{ asset('images/' . $property->image) }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                    @endif
+                                @else
+                                    <img src="{{ asset('images/img_1.jpg') }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                @endif
                             </a>
 
                             <div class="property-content">
-                                <div class="price mb-2"><span>$1,291,000</span></div>
+                                <div class="price mb-2">
+                                    <span>{{ number_format($property->price, 0, ',', '.') }} VNĐ</span>
+                                </div>
                                 <div>
-                                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                                    <span class="city d-block mb-3">California, USA</span>
+                                    <h5 class="mb-3" style="color: #1a237e; font-weight: 700; font-size: 1.1rem; line-height: 1.4;">
+                                        {{ $property->title }}
+                                    </h5>
+                                    <span class="d-block mb-2 text-black-50">
+                                        <i class="bi bi-geo-alt"></i> {{ $property->address }}
+                                    </span>
+                                    <span class="city d-block mb-3">{{ $property->city }}, {{ $property->country }}</span>
 
-                                    <div class="specs d-flex mb-4">
-                                        <span class="d-block d-flex align-items-center me-3">
+                                    @if($property->bedrooms > 0 || $property->bathrooms > 0 || $property->area > 0)
+                                    <div class="specs d-flex mb-4 flex-wrap">
+                                        @if($property->bedrooms > 0)
+                                        <span class="d-block d-flex align-items-center me-3 mb-2">
                                             <span class="icon-bed me-2"></span>
-                                            <span class="caption">2 phòng ngủ</span>
+                                            <span class="caption">{{ $property->bedrooms }} phòng ngủ</span>
                                         </span>
-                                        <span class="d-block d-flex align-items-center">
+                                        @endif
+                                        @if($property->bathrooms > 0)
+                                        <span class="d-block d-flex align-items-center me-3 mb-2">
                                             <span class="icon-bath me-2"></span>
-                                            <span class="caption">2 phòng tắm</span>
+                                            <span class="caption">{{ $property->bathrooms }} phòng tắm</span>
                                         </span>
+                                        @endif
+                                        @if($property->area)
+                                        <span class="d-block d-flex align-items-center mb-2">
+                                            <span class="icon-ruler me-2"></span>
+                                            <span class="caption">{{ number_format($property->area, 0, ',', '.') }} m²</span>
+                                        </span>
+                                        @endif
                                     </div>
+                                    @endif
 
-                                    <a href="{{ route('property.single') }}" class="btn btn-primary py-2 px-3">Xem chi tiết</a>
+                                    <a href="{{ route('property.single', $property->id) }}" class="btn btn-primary py-2 px-3">Xem chi tiết</a>
                                 </div>
                             </div>
                         </div>
-                        @endfor
+                        @empty
+                        <div class="col-12 text-center">
+                            <p class="text-muted">Chưa có bất động sản nào được hiển thị</p>
+                        </div>
+                        @endforelse
                     </div>
 
-                    <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
-                        <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Trước</span>
-                        <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Sau</span>
+                    @if($featuredProperties->count() > 0)
+                    <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation" style="position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
+                        <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1" style="position: absolute; left: -50px; background: #1a237e; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; pointer-events: all; box-shadow: 0 2px 10px rgba(0,0,0,0.2); transition: all 0.3s;">
+                            <i class="bi bi-chevron-left" style="font-size: 24px;"></i>
+                        </span>
+                        <span class="next" data-controls="next" aria-controls="property" tabindex="-1" style="position: absolute; right: -50px; background: #1a237e; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; pointer-events: all; box-shadow: 0 2px 10px rgba(0,0,0,0.2); transition: all 0.3s;">
+                            <i class="bi bi-chevron-right" style="font-size: 24px;"></i>
+                        </span>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

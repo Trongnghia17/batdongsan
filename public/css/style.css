@@ -13642,7 +13642,7 @@ body {
   color: #01215f;
 }
 
-.site-nav .site-navigation .site-menu .has-children:hover>a,
+.site-nav .site-navigation .site-menu 
 .site-nav .site-navigation .site-menu .has-children:focus>a,
 .site-nav .site-navigation .site-menu .has-children:active>a {
   color: #fff;

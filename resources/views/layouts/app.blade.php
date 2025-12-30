@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}" />
@@ -43,18 +44,13 @@
                             <a href="{{ route('home') }}">Trang Chủ</a>
                         </li>
                         <li class="has-children {{ request()->routeIs('properties*') ? 'active' : '' }}">
-                            <a href="{{ route('properties') }}">Bất Động Sản</a>
+                            <a href="{{ route('properties') }}">Lĩnh vực hoạt động</a>
                             <ul class="dropdown">
-                                <li><a href="#">Mua Bất Động Sản</a></li>
-                                <li><a href="#">Bán Bất Động Sản</a></li>
-                                <li class="has-children">
-                                    <a href="#">Danh Mục</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Danh Mục Con 1</a></li>
-                                        <li><a href="#">Danh Mục Con 2</a></li>
-                                        <li><a href="#">Danh Mục Con 3</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="#">Bất Động Sản</a></li>
+                                <li><a href="#">Xăng dầu</a></li>
+                                 <li><a href="#">Năng lượng xanh</a></li>
+                                  <li><a href="#">Logistic</a></li>
+                           
                             </ul>
                         </li>
                         <li class="{{ request()->routeIs('services') ? 'active' : '' }}">

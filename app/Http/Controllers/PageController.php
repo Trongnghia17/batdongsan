@@ -3,22 +3,39 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Property;
 
 class PageController extends Controller
 {
     public function home()
     {
-        return view('home');
+        $featuredProperties = Property::where('is_active', true)
+            ->where('is_featured', true)
+            ->latest()
+            ->take(8)
+            ->get();
+            
+        return view('home', compact('featuredProperties'));
     }
 
     public function properties()
     {
-        return view('properties');
+        $properties = Property::where('is_active', true)
+            ->latest()
+            ->paginate(12);
+        return view('properties', compact('properties'));
     }
 
-    public function propertySingle()
+    public function propertySingle($id)
     {
-        return view('property-single');
+        $property = Property::where('is_active', true)->findOrFail($id);
+        $relatedProperties = Property::where('is_active', true)
+            ->where('id', '!=', $id)
+            ->where('city', $property->city)
+            ->take(3)
+            ->get();
+            
+        return view('property-single', compact('property', 'relatedProperties'));
     }
 
     public function services()
@@ -36,3 +53,4 @@ class PageController extends Controller
         return view('contact');
     }
 }
+
