@@ -27,14 +27,14 @@
         <div class="row">
             @php
                 $services = [
-                    ['icon' => 'flaticon-house', 'title' => 'BĐS Chất Lượng', 'delay' => '300'],
-                    ['icon' => 'flaticon-house-2', 'title' => 'Đại Lý Uy Tín', 'delay' => '400'],
-                    ['icon' => 'flaticon-building', 'title' => 'BĐS Cần Bán', 'delay' => '500'],
-                    ['icon' => 'flaticon-house-3', 'title' => 'Nhà Cần Bán', 'delay' => '600'],
-                    ['icon' => 'flaticon-house-4', 'title' => 'BĐS Chất Lượng', 'delay' => '300'],
-                    ['icon' => 'flaticon-building', 'title' => 'Đại Lý Uy Tín', 'delay' => '400'],
-                    ['icon' => 'flaticon-house', 'title' => 'BĐS Cần Bán', 'delay' => '500'],
-                    ['icon' => 'flaticon-house-1', 'title' => 'Nhà Cần Bán', 'delay' => '600'],
+                    ['icon' => 'flaticon-house', 'title' => 'Mua Bán Nhà Đất', 'desc' => 'Hỗ trợ tư vấn và môi giới mua bán các loại hình bất động sản từ nhà riêng, chung cư đến đất nền với giá tốt nhất thị trường.', 'delay' => '300'],
+                    ['icon' => 'flaticon-house-2', 'title' => 'Cho Thuê BĐS', 'desc' => 'Dịch vụ cho thuê căn hộ, nhà riêng, văn phòng, mặt bằng kinh doanh với nhiều lựa chọn phù hợp với nhu cầu của bạn.', 'delay' => '400'],
+                    ['icon' => 'flaticon-building', 'title' => 'Đầu Tư BĐS', 'desc' => 'Tư vấn đầu tư bất động sản hiệu quả, phân tích thị trường và cung cấp thông tin các dự án tiềm năng sinh lời cao.', 'delay' => '500'],
+                    ['icon' => 'flaticon-house-3', 'title' => 'Định Giá BĐS', 'desc' => 'Dịch vụ định giá bất động sản chuyên nghiệp, chính xác dựa trên phân tích thị trường và vị trí địa lý.', 'delay' => '600'],
+                    ['icon' => 'flaticon-house-4', 'title' => 'Quản Lý Tài Sản', 'desc' => 'Quản lý và vận hành bất động sản chuyên nghiệp, giúp tối ưu hóa giá trị và duy trì tài sản lâu dài.', 'delay' => '300'],
+                    ['icon' => 'flaticon-building', 'title' => 'Tư Vấn Pháp Lý', 'desc' => 'Hỗ trợ pháp lý toàn diện trong giao dịch bất động sản, đảm bảo quyền lợi và giảm thiểu rủi ro cho khách hàng.', 'delay' => '400'],
+                    ['icon' => 'flaticon-house', 'title' => 'Môi Giới Chuyên Nghiệp', 'desc' => 'Đội ngũ môi giới giàu kinh nghiệm, am hiểu thị trường, tận tâm tìm kiếm giải pháp tối ưu cho mọi nhu cầu.', 'delay' => '500'],
+                    ['icon' => 'flaticon-house-1', 'title' => 'Hỗ Trợ Vay Vốn', 'desc' => 'Tư vấn và hỗ trợ thủ tục vay vốn mua nhà với lãi suất ưu đãi từ các ngân hàng uy tín hàng đầu.', 'delay' => '600'],
                 ];
             @endphp
 
@@ -46,8 +46,7 @@
                         {{ $service['title'] }}
                     </h3>
                     <p class="text-black-50">
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts.
+                        {{ $service['desc'] }}
                     </p>
                     <p><a href="#" class="learn-more">Đọc thêm</a></p>
                 </div>
@@ -80,10 +79,10 @@
             <div class="testimonial-slider">
                 @php
                     $testimonials = [
-                        ['name' => 'James Smith', 'image' => 'person_1-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Mike Houston', 'image' => 'person_2-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Cameron Webster', 'image' => 'person_3-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
-                        ['name' => 'Dave Smith', 'image' => 'person_4-min.jpg', 'role' => 'Thiết kế, Đồng sáng lập'],
+                        ['name' => 'Nguyễn Văn An', 'image' => 'person_1-min.jpg', 'role' => 'Chủ đầu tư dự án', 'review' => 'Tôi rất hài lòng với dịch vụ tư vấn bất động sản tại đây. Đội ngũ chuyên nghiệp, nhiệt tình và giúp tôi tìm được căn nhà ưng ý trong thời gian ngắn với mức giá hợp lý.'],
+                        ['name' => 'Trần Thị Mai', 'image' => 'person_2-min.jpg', 'role' => 'Khách hàng doanh nghiệp', 'review' => 'Dịch vụ môi giới chuyên nghiệp, thủ tục nhanh gọn. Họ đã hỗ trợ tôi từ khâu tìm kiếm, thương lượng giá đến hoàn tất pháp lý một cách trọn gói và minh bạch.'],
+                        ['name' => 'Lê Hoàng Nam', 'image' => 'person_3-min.jpg', 'role' => 'Nhà đầu tư cá nhân', 'review' => 'Tư vấn đầu tư bất động sản rất tốt, phân tích thị trường chính xác giúp tôi đưa ra quyết định đúng đắn. Tôi đã sinh lời tốt từ những gợi ý của họ.'],
+                        ['name' => 'Phạm Thu Hương', 'image' => 'person_4-min.jpg', 'role' => 'Khách hàng cá nhân', 'review' => 'Đội ngũ tư vấn rất am hiểu về pháp lý và thị trường. Họ đã giúp tôi tránh được nhiều rủi ro trong quá trình giao dịch mua bán bất động sản. Rất đáng tin cậy!'],
                     ];
                 @endphp
 
@@ -99,10 +98,7 @@
                         <h3 class="h5 text-primary mb-4">{{ $testimonial['name'] }}</h3>
                         <blockquote>
                             <p>
-                                &ldquo;Far far away, behind the word mountains, far from the
-                                countries Vokalia and Consonantia, there live the blind
-                                texts. Separated they live in Bookmarksgrove right at the
-                                coast of the Semantics, a large language ocean.&rdquo;
+                                &ldquo;{{ $testimonial['review'] }}&rdquo;
                             </p>
                         </blockquote>
                         <p class="text-black-50">{{ $testimonial['role'] }}</p>

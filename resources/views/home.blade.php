@@ -9,15 +9,16 @@
     }
     #property-nav .prev:hover,
     #property-nav .next:hover {
-        background: #0d1642 !important;
-        transform: scale(1.1);
+        transform: scale(1.15);
+        box-shadow: 0 6px 20px rgba(26,35,126,0.5) !important;
+    }
+    .property-item:hover .img img {
+        transform: scale(1.05);
     }
     @media (max-width: 768px) {
-        #property-nav .prev {
-            left: 10px !important;
-        }
+        #property-nav .prev,
         #property-nav .next {
-            right: 10px !important;
+            display: none !important;
         }
     }
 </style>
@@ -208,97 +209,106 @@
     </div>
 </section>
 
-<div class="section">
+<div class="section" style="background-color: #f8f9fa;">
     <div class="container">
-        <div class="row mb-5 align-items-center">
-            <div class="col-lg-6">
-                 <h2 class="font-weight-bold text-primary heading">
-                    Bất Động Sản Phổ Biến
-                </h2>
-            </div>
-            <div class="col-lg-6 text-lg-end">
-                <p>
-                    <a href="{{ route('properties') }}" class="btn btn-primary text-white py-3 px-4">Xem tất cả</a>
-                </p>
+        <!-- Header -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h2 class="font-weight-bold text-primary mb-3" style="font-size: 2rem; letter-spacing: 1px;">DỰ ÁN BẤT ĐỘNG SẢN NỔI BẬT</h2>
+                <div class="mx-auto mb-4" style="height: 3px; width: 60px; background-color: #1a237e;"></div>
+                <p class="text-muted mb-0" style="font-size: 1rem;">Khám phá các dự án bất động sản tiềm năng của Tập đoàn Ngân Tín</p>
             </div>
         </div>
+        
         <div class="row">
             <div class="col-12">
                 <div class="property-slider-wrap" style="position: relative;">
                     <div class="property-slider">
                         @forelse ($featuredProperties as $property)
-                        <div class="property-item">
-                            <a href="{{ route('property.single', $property->id) }}" class="img" style="display: block; overflow: hidden; height: 300px;">
+                        <div class="property-item" data-aos="fade-up">
+                            <a href="{{ route('property.single', $property->id) }}" class="img" style="display: block; overflow: hidden; height: 300px; border-radius: 8px 8px 0 0;">
                                 @if($property->image)
                                     @if(Str::startsWith($property->image, 'properties/'))
-                                        <img src="{{ asset('storage/' . $property->image) }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                        <img src="{{ asset('storage/' . $property->image) }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" />
                                     @else
-                                        <img src="{{ asset('images/' . $property->image) }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                        <img src="{{ asset('images/' . $property->image) }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" />
                                     @endif
                                 @else
-                                    <img src="{{ asset('images/img_1.jpg') }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                    <img src="{{ asset('images/img_1.jpg') }}" alt="{{ $property->title }}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" />
                                 @endif
                             </a>
 
-                            <div class="property-content">
-                                <div class="price mb-2">
-                                    <span>{{ number_format($property->price, 0, ',', '.') }} VNĐ</span>
-                                </div>
+                            <div class="property-content" style="background: white; padding: 1.5rem; border-radius: 0 0 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                                <!-- <div class="price mb-3" style=" display: inline-block; padding: 0.5rem 1rem; border-radius: 50px;">
+                                    <span style=" font-weight: 700; font-size: 1.1rem;">{{ number_format($property->price, 0, ',', '.') }} VNĐ</span>
+                                </div> -->
                                 <div>
-                                    <h5 class="mb-3" style="color: #1a237e; font-weight: 700; font-size: 1.1rem; line-height: 1.4;">
+                                    <h5 class="mb-3" style="color: #1a237e; font-weight: 700; font-size: 1.15rem; line-height: 1.4; min-height: 2.8rem;">
                                         {{ $property->title }}
                                     </h5>
-                                    <span class="d-block mb-2 text-black-50">
-                                        <i class="bi bi-geo-alt"></i> {{ $property->address }}
+                                    <span class="d-block mb-2 text-black-50" style="font-size: 0.95rem;">
+                                        <i class="bi bi-geo-alt" style="color: #ffc107;"></i> {{ $property->address }}
                                     </span>
-                                    <span class="city d-block mb-3">{{ $property->city }}, {{ $property->country }}</span>
+                                    <span class="city d-block mb-3" style="font-weight: 600; color: #333;">{{ $property->city }}, {{ $property->country }}</span>
 
                                     @if($property->bedrooms > 0 || $property->bathrooms > 0 || $property->area > 0)
-                                    <div class="specs d-flex mb-4 flex-wrap">
+                                    <div class="specs d-flex mb-4 flex-wrap" style="gap: 1rem;">
+                                        @if($property->area)
+                                        <span class="d-block d-flex align-items-center" style="background: #f8f9fa; padding: 0.5rem 1rem; border-radius: 50px;">
+                                            <span class="icon-ruler me-2" style="color: #1a237e;"></span>
+                                            <span class="caption" style="font-weight: 600;">{{ number_format($property->area, 0, ',', '.') }} m²</span>
+                                        </span>
+                                        @endif
                                         @if($property->bedrooms > 0)
-                                        <span class="d-block d-flex align-items-center me-3 mb-2">
-                                            <span class="icon-bed me-2"></span>
-                                            <span class="caption">{{ $property->bedrooms }} phòng ngủ</span>
+                                        <span class="d-block d-flex align-items-center" style="background: #f8f9fa; padding: 0.5rem 1rem; border-radius: 50px;">
+                                            <span class="icon-bed me-2" style="color: #1a237e;"></span>
+                                            <span class="caption" style="font-weight: 600;">{{ $property->bedrooms }} PN</span>
                                         </span>
                                         @endif
                                         @if($property->bathrooms > 0)
-                                        <span class="d-block d-flex align-items-center me-3 mb-2">
-                                            <span class="icon-bath me-2"></span>
-                                            <span class="caption">{{ $property->bathrooms }} phòng tắm</span>
-                                        </span>
-                                        @endif
-                                        @if($property->area)
-                                        <span class="d-block d-flex align-items-center mb-2">
-                                            <span class="icon-ruler me-2"></span>
-                                            <span class="caption">{{ number_format($property->area, 0, ',', '.') }} m²</span>
+                                        <span class="d-block d-flex align-items-center" style="background: #f8f9fa; padding: 0.5rem 1rem; border-radius: 50px;">
+                                            <span class="icon-bath me-2" style="color: #1a237e;"></span>
+                                            <span class="caption" style="font-weight: 600;">{{ $property->bathrooms }} PT</span>
                                         </span>
                                         @endif
                                     </div>
                                     @endif
 
-                                    <a href="{{ route('property.single', $property->id) }}" class="btn btn-primary py-2 px-3">Xem chi tiết</a>
+                                    <a href="{{ route('property.single', $property->id) }}" class="btn text-white px-4 py-2" style="background-color: #ffc107; border: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(255,193,7,0.3); transition: all 0.3s;">
+                                        Xem chi tiết <span class="ms-1">→</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         @empty
-                        <div class="col-12 text-center">
-                            <p class="text-muted">Chưa có bất động sản nào được hiển thị</p>
+                        <div class="col-12 text-center py-5">
+                            <div class="text-muted">
+                                <i class="bi bi-house-x" style="font-size: 3rem; color: #ccc;"></i>
+                                <p class="mt-3" style="font-size: 1.1rem;">Chưa có bất động sản nào được hiển thị</p>
+                            </div>
                         </div>
                         @endforelse
                     </div>
 
                     @if($featuredProperties->count() > 0)
                     <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation" style="position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
-                        <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1" style="position: absolute; left: -50px; background: #1a237e; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; pointer-events: all; box-shadow: 0 2px 10px rgba(0,0,0,0.2); transition: all 0.3s;">
-                            <i class="bi bi-chevron-left" style="font-size: 24px;"></i>
+                        <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1" style="position: absolute; left: -60px; background: linear-gradient(135deg, #1a237e 0%, #0d1642 100%); color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; pointer-events: all; box-shadow: 0 4px 15px rgba(26,35,126,0.3); transition: all 0.3s;">
+                            <i class="bi bi-chevron-left" style="font-size: 26px;"></i>
                         </span>
-                        <span class="next" data-controls="next" aria-controls="property" tabindex="-1" style="position: absolute; right: -50px; background: #1a237e; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; pointer-events: all; box-shadow: 0 2px 10px rgba(0,0,0,0.2); transition: all 0.3s;">
-                            <i class="bi bi-chevron-right" style="font-size: 24px;"></i>
+                        <span class="next" data-controls="next" aria-controls="property" tabindex="-1" style="position: absolute; right: -60px; background: linear-gradient(135deg, #1a237e 0%, #0d1642 100%); color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; pointer-events: all; box-shadow: 0 4px 15px rgba(26,35,126,0.3); transition: all 0.3s;">
+                            <i class="bi bi-chevron-right" style="font-size: 26px;"></i>
                         </span>
                     </div>
                     @endif
                 </div>
             </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="{{ route('properties') }}" class="btn text-white px-5 py-3" style="background-color: #ffc107; border: none; border-radius: 50px; font-weight: 600; font-size: 1rem; box-shadow: 0 4px 12px rgba(255,193,7,0.3);">
+                Xem tất cả dự án <span class="ms-2">→</span>
+            </a>
         </div>
     </div>
 </div>
@@ -363,7 +373,7 @@
     </div>
 </div>
 
-<div class="section sec-testimonials">
+<!-- <div class="section sec-testimonials">
     <div class="container">
         <div class="row mb-5 align-items-center">
             <div class="col-md-6">
@@ -435,7 +445,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
