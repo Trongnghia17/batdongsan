@@ -131,6 +131,9 @@
                         <li class="{{ request()->routeIs('properties') ? 'active' : '' }}">
                             <a href="{{ route('properties') }}">Dự Án</a>
                         </li>
+                        <li class="{{ request()->routeIs('news.*') ? 'active' : '' }}">
+                            <a href="{{ route('news.index') }}">Tin Tức</a>
+                        </li>
                         <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
                             <a href="{{ route('services') }}">Dịch Vụ</a>
                         </li>

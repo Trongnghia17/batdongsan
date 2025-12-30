@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Property;
+use App\Models\News;
 
 class PageController extends Controller
 {
@@ -14,8 +15,14 @@ class PageController extends Controller
             ->latest()
             ->take(8)
             ->get();
+        
+        $featuredNews = News::published()
+            ->featured()
+            ->latest('published_at')
+            ->take(6)
+            ->get();
             
-        return view('home', compact('featuredProperties'));
+        return view('home', compact('featuredProperties', 'featuredNews'));
     }
 
     public function properties()

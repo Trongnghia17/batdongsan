@@ -616,6 +616,100 @@
     </div>
 </div>
 
+<!-- TIN TỨC NỔI BẬT Section -->
+<div class="section" style="background-color: #ffffff;">
+    <div class="container">
+        <!-- Header -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h2 class="font-weight-bold text-primary mb-3" style="font-size: 2rem; letter-spacing: 1px;">TIN TỨC NỔI BẬT</h2>
+                <div class="mx-auto mb-3" style="height: 3px; width: 60px; background-color: #1a237e;"></div>
+                <p class="text-black-50">Cập nhật những thông tin mới nhất về thị trường bất động sản và hoạt động của chúng tôi</p>
+            </div>
+        </div>
+
+        <!-- News Grid -->
+        @if($featuredNews && $featuredNews->count() > 0)
+        <div class="row">
+            @foreach($featuredNews as $news)
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ 100 * $loop->iteration }}">
+                <a href="{{ route('news.show', $news->slug) }}" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="news-card h-100" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: all 0.3s; cursor: pointer;" 
+                         onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" 
+                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 15px rgba(0,0,0,0.08)'">
+                        
+                        <!-- News Image -->
+                        <div class="news-image" style="position: relative; overflow: hidden; height: 220px;">
+                            @if($news->image)
+                                <img src="{{ asset($news->image) }}" alt="{{ $news->title }}" 
+                                     style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;"
+                                     onmouseover="this.style.transform='scale(1.1)'" 
+                                     onmouseout="this.style.transform='scale(1)'">
+                            @else
+                                <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                                    <span class="icon-newspaper-o" style="font-size: 3rem; color: white;"></span>
+                                </div>
+                            @endif
+                            
+                            <!-- Category Badge -->
+                            @if($news->category)
+                            <span style="position: absolute; top: 15px; left: 15px; background: #ffc107; color: #1a237e; padding: 6px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">
+                                {{ $news->category }}
+                            </span>
+                            @endif
+                        </div>
+                        
+                        <!-- News Content -->
+                        <div class="news-content" style="padding: 1.5rem;">
+                            <!-- Date -->
+                            <div class="news-meta mb-2">
+                                <span style="color: #999; font-size: 0.85rem;">
+                                    <i class="icon-calendar"></i> {{ $news->published_at ? $news->published_at->format('d/m/Y') : '' }}
+                                </span>
+                                @if($news->views)
+                                <span style="color: #999; font-size: 0.85rem; margin-left: 15px;">
+                                    <i class="icon-eye"></i> {{ number_format($news->views) }} lượt xem
+                                </span>
+                                @endif
+                            </div>
+                            
+                            <!-- Title -->
+                            <h3 class="news-title mb-3" style="font-size: 1.1rem; font-weight: 600; color: #1a237e; line-height: 1.5; min-height: 50px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                {{ $news->title }}
+                            </h3>
+                            
+                            <!-- Excerpt -->
+                            @if($news->excerpt)
+                            <p class="news-excerpt text-black-50 mb-3" style="font-size: 0.9rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                                {{ $news->excerpt }}
+                            </p>
+                            @endif
+                            
+                            <!-- Read More -->
+                            <span class="read-more" style="color: #ffc107; font-weight: 600; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; transition: all 0.3s;">
+                                Đọc tiếp <span class="arrow" style="margin-left: 5px; transition: transform 0.3s;">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            @endforeach
+        </div>
+        
+        <!-- View All News Button -->
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="{{ route('news.index') }}" class="btn text-white px-5 py-3" style="background-color: #ffc107; border: none; border-radius: 50px; font-weight: 600; font-size: 1rem; box-shadow: 0 4px 12px rgba(255,193,7,0.3);">
+                Xem tất cả tin tức <span class="ms-2">→</span>
+            </a>
+        </div>
+        @else
+        <div class="text-center py-5" data-aos="fade-up">
+            <p class="text-black-50">Hiện chưa có tin tức nổi bật nào.</p>
+        </div>
+        @endif
+    </div>
+</div>
+
 <!-- LĨNH VỰC HOẠT ĐỘNG Section -->
 <div class="section" style="background-color: #f8f9fa;">
     <div class="container">

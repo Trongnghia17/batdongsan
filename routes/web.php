@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ConsultationController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\Admin\PropertyController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\ConsultationController as AdminConsultationController;
+use App\Http\Controllers\Admin\NewsController as AdminNewsController;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/properties', [PageController::class, 'properties'])->name('properties');
@@ -13,6 +15,10 @@ Route::get('/property/{id}', [PageController::class, 'propertySingle'])->name('p
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+
+// News Routes
+Route::get('/news', [NewsController::class, 'index'])->name('news.index');
+Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
 
 // Consultation submission
 Route::post('/consultation', [ConsultationController::class, 'store'])->name('consultation.store');
@@ -31,4 +37,5 @@ Route::prefix('admin')->name('admin.')->middleware('admin')->group(function () {
     });
     Route::resource('properties', PropertyController::class);
     Route::resource('consultations', AdminConsultationController::class);
+    Route::resource('news', AdminNewsController::class);
 });
