@@ -44,6 +44,9 @@
                     <a class="nav-link {{ request()->routeIs('admin.properties.*') ? 'active' : '' }}" href="{{ route('admin.properties.index') }}">
                         <i class="bi bi-building"></i> Quản lý BĐS
                     </a>
+                    <a class="nav-link {{ request()->routeIs('admin.consultations.*') ? 'active' : '' }}" href="{{ route('admin.consultations.index') }}">
+                        <i class="bi bi-chat-dots"></i> Tư vấn khách hàng
+                    </a>
                     <a class="nav-link" href="{{ route('home') }}" target="_blank">
                         <i class="bi bi-house"></i> Xem trang chủ
                     </a>

@@ -21,7 +21,7 @@
             display: none !important;
         }
     }
-                                
+
     /* Popup Styles */
     .popup-overlay {
         display: none;
@@ -274,18 +274,48 @@
     function submitConsultation(e) {
         e.preventDefault();
         
-        const formData = new FormData(e.target);
-        const data = Object.fromEntries(formData);
+        const form = e.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
         
-        // TODO: Gửi data đến server
-        console.log('Form data:', data);
+        // Disable button và hiển thị loading
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Đang gửi...';
         
-        // Hiển thị thông báo thành công
-        alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.');
+        const formData = new FormData(form);
+        const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
         
-        // Reset form và đóng popup
-        e.target.reset();
-        closePopup();
+        fetch('{{ route("consultation.store") }}', {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': csrfToken || '',
+                'Accept': 'application/json',
+            },
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert(data.message);
+                form.reset();
+                closePopup();
+            } else {
+                let errorMsg = 'Có lỗi xảy ra. Vui lòng thử lại.';
+                if (data.errors) {
+                    errorMsg = Object.values(data.errors).flat().join('\n');
+                }
+                alert(errorMsg);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Có lỗi xảy ra. Vui lòng thử lại sau.');
+        })
+        .finally(() => {
+            // Enable button trở lại
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+        });
     }
 
     // Ngăn ESC key đóng popup

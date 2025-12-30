@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ngân Tín Group" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" />
 
     <meta name="description" content="Tập đoàn Ngân Tín - Công ty Cổ phần Tập đoàn Đầu tư Ngân Tín, chuyên về Bất động sản, Năng lượng xanh, Kho cảng biển và Kinh doanh xăng dầu" />
@@ -47,6 +48,48 @@
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+
+    <style>
+        /* Mobile Menu Icon - Hamburger Style */
+        @media (max-width: 991.98px) {
+            .site-navigation {
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                width: 100% !important;
+            }
+            
+            .site-menu-toggle {
+                position: relative !important;
+                margin-left: auto !important;
+                margin-right: 0 !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                padding: 10px !important;
+                z-index: 9999 !important;
+                background: rgba(0,0,0,0.3);
+                border-radius: 5px;
+            }
+
+            .site-menu-toggle i {
+                font-size: 36px !important;
+                color: #fff !important;
+                transition: color 0.3s ease;
+                display: block !important;
+                line-height: 1 !important;
+            }
+
+            .site-menu-toggle:hover i {
+                color: #f5c92c !important;
+            }
+
+            /* Ẩn burger cũ nếu còn */
+            .burger {
+                display: none !important;
+            }
+        }
+    </style>
 
     <title>@yield('title', 'Dự án')</title>
 </head>
@@ -97,10 +140,9 @@
                         </li>
                     </ul>
 
-                    <a href="#"
-                        class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                    <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-lg-none" 
                         data-toggle="collapse" data-target="#main-navbar">
-                        <span></span>
+                        <i class="bi bi-list" style="font-size: 36px; color: #fff; display: block;"></i>
                     </a>
                 </div>
             </div>
