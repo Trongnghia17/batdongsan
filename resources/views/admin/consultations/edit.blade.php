@@ -59,7 +59,7 @@
                                 Đang xử lý
                             </option>
                             <option value="completed" {{ $consultation->status == 'completed' ? 'selected' : '' }}>
-                                Hoàn thành
+                                Đã nộp đủ tiền
                             </option>
                             <option value="cancelled" {{ $consultation->status == 'cancelled' ? 'selected' : '' }}>
                                 Đã hủy
@@ -119,7 +119,7 @@
                 <ul class="mb-0">
                     <li><strong>Chờ xử lý:</strong> Yêu cầu mới, chưa liên hệ</li>
                     <li><strong>Đang xử lý:</strong> Đã liên hệ, đang tư vấn</li>
-                    <li><strong>Hoàn thành:</strong> Đã tư vấn xong hoặc chốt deal</li>
+                    <li><strong>Đã nộp đủ tiền:</strong> Khách hàng đã hoàn tất thanh toán</li>
                     <li><strong>Đã hủy:</strong> Khách không có nhu cầu nữa</li>
                 </ul>
             </div>

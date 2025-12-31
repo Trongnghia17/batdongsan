@@ -26,7 +26,7 @@ class Consultation extends Model
         $statuses = [
             'pending' => 'Chờ xử lý',
             'processing' => 'Đang xử lý',
-            'completed' => 'Hoàn thành',
+            'completed' => 'Đã nộp đủ tiền',
             'cancelled' => 'Đã hủy'
         ];
 

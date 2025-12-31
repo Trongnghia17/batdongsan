@@ -19,7 +19,7 @@
                     <option value="">Tất cả trạng thái</option>
                     <option value="pending" {{ request('status') == 'pending' ? 'selected' : '' }}>Chờ xử lý</option>
                     <option value="processing" {{ request('status') == 'processing' ? 'selected' : '' }}>Đang xử lý</option>
-                    <option value="completed" {{ request('status') == 'completed' ? 'selected' : '' }}>Hoàn thành</option>
+                    <option value="completed" {{ request('status') == 'completed' ? 'selected' : '' }}>Đã nộp đủ tiền</option>
                     <option value="cancelled" {{ request('status') == 'cancelled' ? 'selected' : '' }}>Đã hủy</option>
                 </select>
             </div>
@@ -58,7 +58,7 @@
     <div class="col-md-3">
         <div class="card bg-success text-white">
             <div class="card-body">
-                <h6>Hoàn thành</h6>
+                <h6>Đã nộp đủ tiền</h6>
                 <h3>{{ \App\Models\Consultation::where('status', 'completed')->count() }}</h3>
             </div>
         </div>
