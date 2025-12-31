@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             AdminUserSeeder::class,
             PropertySeeder::class,
             NewsSeeder::class,
+            ConsultationSeeder::class,
         ]);
     }
 }

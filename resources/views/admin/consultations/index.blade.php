@@ -81,7 +81,7 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>STT</th>
                             <th>Họ tên</th>
                             <th>Số điện thoại</th>
                             <th>Email</th>
@@ -94,7 +94,7 @@
                     <tbody>
                         @foreach($consultations as $consultation)
                         <tr>
-                            <td>{{ $consultation->id }}</td>
+                            <td>{{ ($consultations->currentPage() - 1) * $consultations->perPage() + $loop->iteration }}</td>
                             <td>{{ $consultation->name }}</td>
                             <td>
                                 <a href="tel:{{ $consultation->phone }}">
@@ -138,8 +138,14 @@
                 </table>
             </div>
 
-            <div class="mt-3">
-                {{ $consultations->links() }}
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+                <div class="text-muted">
+                    Hiển thị {{ $consultations->firstItem() ?? 0 }} - {{ $consultations->lastItem() ?? 0 }} 
+                    trong tổng số {{ $consultations->total() }} kết quả
+                </div>
+                <div>
+                    {{ $consultations->appends(request()->query())->links('pagination::bootstrap-5') }}
+                </div>
             </div>
         @else
             <div class="alert alert-info">
