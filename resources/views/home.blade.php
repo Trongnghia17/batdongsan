@@ -438,7 +438,7 @@
         </div>
         <div class="row">
             <!-- Doanh thu hàng nghìn tỷ -->
-            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="box-feature h-100 d-flex flex-column">
                     <span class="flaticon-house"></span>
                     <h3 class="mb-3">Doanh thu hàng nghìn tỷ</h3>
@@ -450,7 +450,7 @@
             </div>
 
             <!-- Dự án BĐS trọng điểm -->
-            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="box-feature h-100 d-flex flex-column">
                     <span class="flaticon-building"></span>
                     <h3 class="mb-3">Dự án BĐS trọng điểm</h3>
@@ -462,7 +462,7 @@
             </div>
 
             <!-- Hệ thống đại lý khắp cả nước -->
-            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
                 <div class="box-feature h-100 d-flex flex-column">
                     <span class="flaticon-house-3"></span>
                     <h3 class="mb-3">Hệ thống đại lý khắp cả nước</h3>
@@ -474,7 +474,7 @@
             </div>
 
             <!-- Top 10 Thương hiệu xuất sắc châu Á -->
-            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
                 <div class="box-feature h-100 d-flex flex-column">
                     <span class="flaticon-house-1"></span>
                     <h3 class="mb-3">Top 10 Thương hiệu xuất sắc châu Á</h3>
@@ -486,7 +486,7 @@
             </div>
 
             <!-- Môi trường làm việc tốt nhất Châu Á -->
-            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="col-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
                 <div class="box-feature h-100 d-flex flex-column">
                     <span class="flaticon-building"></span>
                     <h3 class="mb-3">Môi trường làm việc tốt nhất Châu Á</h3>
@@ -498,7 +498,7 @@
             </div>
 
             <!-- Top 10 doanh nghiệp tiêu biểu ASEAN 2024 -->
-            <div class="col-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="col-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="800">
                 <div class="box-feature h-100 d-flex flex-column">
                     <span class="flaticon-house-2"></span>
                     <h3 class="mb-3">Top 10 doanh nghiệp tiêu biểu ASEAN 2024</h3>
